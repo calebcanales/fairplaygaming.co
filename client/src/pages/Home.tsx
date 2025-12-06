@@ -61,11 +61,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Featured Image - SAVAGE COMPARISON */}
+            {/* Featured Image - CANCELLED OWNERS */}
             <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl border-4 border-red-600">
               <img 
-                src="/images/text/hero_savage_final.png" 
-                alt="Stake vs BetOnline Comparison" 
+                src="/images/owners_cancelled.png" 
+                alt="Stake Owners Cancelled" 
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
                 onClick={handlePlayClick}
               />
@@ -81,16 +81,7 @@ export default function Home() {
               <div className="pt-4">
                 <img src="/images/text/article_subhead_owners.png" alt="Billionaire Scam" className="h-10 w-auto mb-4" />
                 
-                {/* Cancelled Owners Graphic */}
-                <div className="mb-6 relative group cursor-pointer" onClick={handlePlayClick}>
-                  <div className="absolute inset-0 bg-red-900/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
-                  <img 
-                    src="/images/owners_cancelled.png" 
-                    alt="Owners Cancelled" 
-                    className="w-full rounded-lg shadow-lg border border-gray-200" 
-                  />
-                  <p className="text-xs text-center text-gray-500 mt-2 italic">Stake.com founders Eddie and Bijan facing scrutiny</p>
-                </div>
+                
 
                 <img src="/images/text/para_owners.png" alt="Owners Analysis" className="w-full mb-6" />
                 <div className="bg-red-50 border-l-4 border-red-600 p-4 italic text-gray-700 font-serif">

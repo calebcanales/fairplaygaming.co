@@ -26,8 +26,8 @@ def create_cancelled_graphic():
              font = ImageFont.load_default()
              font_size = 40
         else:
-            # Calculate font size based on image width
-            font_size = int(img.width / 6)
+            # Reduce font size to be less obstructive (was /6)
+            font_size = int(img.width / 8)
             font = ImageFont.truetype(font_path, font_size)
     except:
         font = ImageFont.load_default()
@@ -42,7 +42,7 @@ def create_cancelled_graphic():
     
     # Stamp dimensions
     padding_x = int(text_width * 0.1)
-    padding_y = int(text_height * 0.2)
+    padding_y = int(text_height * 0.1)
     stamp_w = text_width + 2 * padding_x
     stamp_h = text_height + 2 * padding_y
     
@@ -56,16 +56,17 @@ def create_cancelled_graphic():
     rect_x2 = center_x + stamp_w / 2
     rect_y2 = center_y + stamp_h / 2
 
-    # Colors
-    stamp_color = (220, 20, 60, 230) # Crimson red, slightly transparent
+    # Colors - More transparent red
+    # Was (220, 20, 60, 230)
+    stamp_color = (200, 0, 0, 160) 
     
     # Draw the rectangle border
-    border_width = int(font_size / 10)
+    border_width = int(font_size / 8)
     draw.rectangle([rect_x1, rect_y1, rect_x2, rect_y2], outline=stamp_color, width=border_width)
     
     # Draw the text inside
     text_x = center_x - text_width / 2
-    text_y = center_y - text_height / 2 - (bbox[3] - bbox[1]) * 0.1 # Slight vertical adjustment
+    text_y = center_y - text_height / 2 - (bbox[3] - bbox[1]) * 0.1
     
     draw.text((text_x, text_y), text, font=font, fill=stamp_color)
 
