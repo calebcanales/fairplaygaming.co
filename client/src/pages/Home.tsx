@@ -80,6 +80,18 @@ export default function Home() {
               {/* Section 1: Billionaire Owners */}
               <div className="pt-4">
                 <img src="/images/text/article_subhead_owners.png" alt="Billionaire Scam" className="h-10 w-auto mb-4" />
+                
+                {/* Cancelled Owners Graphic */}
+                <div className="mb-6 relative group cursor-pointer" onClick={handlePlayClick}>
+                  <div className="absolute inset-0 bg-red-900/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+                  <img 
+                    src="/images/owners_cancelled.png" 
+                    alt="Owners Cancelled" 
+                    className="w-full rounded-lg shadow-lg border border-gray-200" 
+                  />
+                  <p className="text-xs text-center text-gray-500 mt-2 italic">Stake.com founders Eddie and Bijan facing scrutiny</p>
+                </div>
+
                 <img src="/images/text/para_owners.png" alt="Owners Analysis" className="w-full mb-6" />
                 <div className="bg-red-50 border-l-4 border-red-600 p-4 italic text-gray-700 font-serif">
                   "They're buying $50 million mansions while you lose your rent money on rigged plinko balls."
