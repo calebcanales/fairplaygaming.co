@@ -184,30 +184,42 @@ export default function Home() {
             
             {/* "Ad" Widget - Updated to Direct Offer */}
             <div className="sticky top-24 space-y-8">
-              <Card className="p-6 bg-gray-900 text-white border-none shadow-xl text-center overflow-hidden relative">
-                {/* Glowing Effect Background */}
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-red-900/20 to-transparent pointer-events-none"></div>
+              <Card 
+                className="p-0 bg-gray-900 text-white border-none shadow-xl text-center overflow-hidden relative cursor-pointer group"
+                onClick={handlePlayClick}
+              >
+                {/* Background Image */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center opacity-50 group-hover:opacity-60 transition-opacity"
+                  style={{ backgroundImage: 'url(/images/sidebar_promo_bg.png)' }}
+                ></div>
                 
-                <div className="relative z-10">
-                  <img src="/images/text/brand_name_white.png" alt="Brand" className="h-10 w-auto mx-auto mb-6" />
+                {/* Content Overlay */}
+                <div className="relative z-10 p-6 flex flex-col items-center h-full min-h-[400px] justify-between">
                   
-                  <div className="bg-white/5 rounded-lg p-4 mb-6 border border-white/10">
-                    <img src="/images/roulette_banner.png" alt="Roulette" className="w-full rounded mb-4 shadow-lg" />
-                    <div className="space-y-3">
-                      <img src="/images/text/bonus_title.png" alt="Bonus" className="h-3 w-auto mx-auto invert opacity-80" />
-                      <img src="/images/text/bonus_amount.png" alt="Amount" className="h-8 w-auto mx-auto drop-shadow-glow" />
-                    </div>
+                  {/* Header */}
+                  <div className="w-full pt-4">
+                    <img src="/images/text/brand_name_white.png" alt="BetOnline" className="h-8 w-auto mx-auto mb-2" />
+                    <div className="h-0.5 w-12 bg-red-600 mx-auto rounded-full"></div>
                   </div>
 
-                  <img 
-                    src="/images/text/btn_play_now.png" 
-                    alt="Play Now" 
-                    className="h-16 w-auto mx-auto cursor-pointer hover:scale-105 transition-transform shadow-xl shadow-green-500/20"
-                    onClick={handlePlayClick}
-                  />
-                  
-                  <div className="mt-6 text-[10px] text-gray-500 font-sans">
-                    T&Cs apply. 18+ only.
+                  {/* Main Offer */}
+                  <div className="space-y-4 py-6">
+                    <img src="/images/text/bonus_title.png" alt="50% Welcome Bonus" className="h-3 w-auto mx-auto invert opacity-90" />
+                    <img src="/images/text/bonus_amount.png" alt="Up to $1,000" className="h-10 w-auto mx-auto drop-shadow-[0_0_15px_rgba(227,24,55,0.6)]" />
+                    <div className="text-xs font-sans text-gray-400 uppercase tracking-widest">Use Code: BOL1000</div>
+                  </div>
+
+                  {/* CTA */}
+                  <div className="w-full pb-4">
+                    <img 
+                      src="/images/text/btn_play_now.png" 
+                      alt="Play Now" 
+                      className="h-14 w-auto mx-auto hover:scale-105 transition-transform shadow-lg shadow-green-500/20"
+                    />
+                    <div className="mt-4 text-[10px] text-gray-500 font-sans">
+                      T&Cs apply. 18+ only.
+                    </div>
                   </div>
                 </div>
               </Card>
