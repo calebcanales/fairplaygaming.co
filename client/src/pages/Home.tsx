@@ -18,7 +18,7 @@ export default function Home() {
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-8">
             {/* Site Logo (Image) */}
-            <img src="/images/text/site_logo.png" alt="Gaming Watchdog" className="h-8 w-auto" />
+            <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto" />
             <nav className="hidden md:flex items-center gap-6 text-sm font-sans font-bold text-gray-800 uppercase tracking-wider">
               <a href="#" className="hover:text-red-600 transition-colors">Investigations</a>
               <a href="#" className="hover:text-red-600 transition-colors">Scam Alerts</a>
@@ -273,7 +273,7 @@ export default function Home() {
         </div>
         <Separator className="my-8 bg-gray-800" />
         <div className="container text-center text-xs text-gray-500">
-          &copy; 2025 Gaming Watchdog. All rights reserved.
+          &copy; 2025 Fairplay Gaming Commission. All rights reserved.
         </div>
       </footer>
     </div>

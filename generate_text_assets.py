@@ -111,8 +111,8 @@ create_text_image("The Safe Alternative: Why Pros Are Moving Here", "article_sub
 create_text_image("Final Verdict: Don't Risk Your Crypto", "article_subhead_3.png", COLOR_BLACK, font=font_medium)
 
 # Meta Info
-create_text_image("By Investigative Team  |  Updated: Dec 06, 2025", "article_meta.png", "#666666", font=font_small)
-create_text_image("GAMING WATCHDOG", "site_logo.png", COLOR_BLACK, font=font_large)
+create_text_image("By Fairplay Gaming Commission  |  Updated: Dec 06, 2025", "article_meta.png", "#666666", font=font_small)
+create_text_image("FAIRPLAY GAMING COMMISSION", "site_logo.png", COLOR_BLACK, font=font_large)
 
 # Body Paragraphs (As Images for total obfuscation)
 # We need a helper for multi-line text
