@@ -234,75 +234,78 @@ create_paragraph_image(
     font_size=20
 )
 
-# 7. Savage Hero Composite
+# 7. Clean Hero Composite (Logo vs Logo)
 def create_savage_hero():
     try:
-        # Load the background
-        bg_path = os.path.join(OUTPUT_DIR, "../hero_vs_bg.png")
-        if not os.path.exists(bg_path):
-            print("Hero BG not found, skipping composite.")
-            return
-            
-        img = Image.open(bg_path).convert("RGBA")
-        width, height = img.size
+        # Create base canvas (Neutral Dark Background)
+        width, height = 1200, 675
+        img = Image.new('RGB', (width, height), color='#111111') # Very dark grey/black
         draw = ImageDraw.Draw(img)
         
         # Fonts
-        font_huge = ImageFont.truetype(font_path, 120)
-        font_massive = ImageFont.truetype(font_path, 200)
+        try:
+            font_huge = ImageFont.truetype(font_path, 120)
+        except:
+            font_huge = ImageFont.load_default()
         
         # Load Logos (User Provided)
-        stake_logo_path = os.path.join(OUTPUT_DIR, "../stake_logo_user.jpg")
-        bol_logo_path = os.path.join(OUTPUT_DIR, "../betlogo.webp")
+        # Note: Paths are relative to where script is run or absolute
+        stake_logo_path = "/home/ubuntu/betonline-prelander/Stake-com-logo-high-res.jpg"
+        bol_logo_path = "/home/ubuntu/betonline-prelander/betlogo.webp"
         
-        # Process Stake Logo (Resize and center)
+        # Process Stake Logo (Left)
         if os.path.exists(stake_logo_path):
             stake_logo = Image.open(stake_logo_path).convert("RGBA")
-            # Remove white background if needed (simple threshold)
-            datas = stake_logo.getdata()
-            newData = []
-            for item in datas:
-                if item[0] > 200 and item[1] > 200 and item[2] > 200:
-                    newData.append((255, 255, 255, 0))
-                else:
-                    newData.append(item)
-            stake_logo.putdata(newData)
+            # Resize Stake logo to fit left side
+            stake_target_width = 450
+            stake_ratio = stake_target_width / stake_logo.width
+            stake_target_height = int(stake_logo.height * stake_ratio)
+            stake_logo = stake_logo.resize((stake_target_width, stake_target_height), Image.Resampling.LANCZOS)
             
-            # Resize to width 500
-            ratio = 500 / stake_logo.width
-            new_height = int(stake_logo.height * ratio)
-            stake_logo = stake_logo.resize((500, new_height), Image.Resampling.LANCZOS)
-            # Paste centered on left side
-            logo_x = int(width*0.25 - stake_logo.width/2)
-            logo_y = int(height*0.5 - stake_logo.height/2)
-            img.paste(stake_logo, (logo_x, logo_y), stake_logo)
+            # Center Stake logo in left half
+            stake_x = (width // 4) - (stake_target_width // 2)
+            stake_y = (height // 2) - (stake_target_height // 2)
+            img.paste(stake_logo, (stake_x, stake_y), stake_logo)
         else:
+            print(f"Stake logo not found at {stake_logo_path}")
             draw.text((width*0.25, height*0.5), "STAKE", font=font_huge, fill="white", anchor="mm")
 
-        # Process BetOnline Logo (Resize and center)
+        # Process BetOnline Logo (Right)
         if os.path.exists(bol_logo_path):
             bol_logo = Image.open(bol_logo_path).convert("RGBA")
-            # Resize to width 600
-            ratio = 600 / bol_logo.width
-            new_height = int(bol_logo.height * ratio)
-            bol_logo = bol_logo.resize((600, new_height), Image.Resampling.LANCZOS)
-            # Paste centered on right side
-            logo_x = int(width*0.75 - bol_logo.width/2)
-            logo_y = int(height*0.5 - bol_logo.height/2)
-            img.paste(bol_logo, (logo_x, logo_y), bol_logo)
+            # Resize BetOnline logo to fit right side
+            bet_target_width = 400
+            bet_ratio = bet_target_width / bol_logo.width
+            bet_target_height = int(bol_logo.height * bet_ratio)
+            bol_logo = bol_logo.resize((bet_target_width, bet_target_height), Image.Resampling.LANCZOS)
+            
+            # Center BetOnline logo in right half
+            bet_x = (3 * width // 4) - (bet_target_width // 2)
+            bet_y = (height // 2) - (bet_target_height // 2)
+            img.paste(bol_logo, (bet_x, bet_y), bol_logo)
         else:
+            print(f"BetOnline logo not found at {bol_logo_path}")
             draw.text((width*0.75, height*0.5), "BETONLINE", font=font_huge, fill="white", anchor="mm")
 
-        # Center VS
-        # Draw a black circle behind VS for contrast
-        circle_radius = 120
-        center_x, center_y = width//2, height//2
-        draw.ellipse((center_x-circle_radius, center_y-circle_radius, center_x+circle_radius, center_y+circle_radius), fill="black", outline="white", width=5)
-        draw.text((center_x, center_y), "VS", font=font_huge, fill="white", anchor="mm")
+        # Center VS Badge
+        vs_size = 160
+        vs_circle = Image.new('RGBA', (vs_size, vs_size), (0, 0, 0, 0))
+        draw_vs = ImageDraw.Draw(vs_circle)
+        draw_vs.ellipse([0, 0, vs_size, vs_size], fill='white', outline='black', width=0) # White circle
+        
+        # Draw "VS" text
+        try:
+            font_vs = ImageFont.truetype(font_path, 90)
+            draw_vs.text((vs_size//2, vs_size//2 + 5), "VS", font=font_vs, fill='black', anchor="mm")
+        except:
+            draw_vs.text((vs_size//2, vs_size//2), "VS", fill='black', anchor="mm")
+            
+        # Paste VS badge
+        img.paste(vs_circle, ((width - vs_size) // 2, (height - vs_size) // 2), vs_circle)
         
         # Save
         img.save(os.path.join(OUTPUT_DIR, "hero_savage_final.png"))
-        print("Generated savage hero composite.")
+        print("Generated clean hero composite.")
         
     except Exception as e:
         print(f"Error creating hero composite: {e}")
