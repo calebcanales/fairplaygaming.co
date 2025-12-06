@@ -96,16 +96,16 @@ create_text_image("50% WELCOME BONUS", "bonus_title.png", COLOR_BLACK)
 create_text_image("UP TO $1,000", "bonus_amount.png", COLOR_RED)
 create_text_image("USE PROMO CODE: BOL1000", "promo_code.png", COLOR_BLACK, font=font_medium)
 
-# 5. Editorial / Article Assets (New)
+# 5. Editorial / Article Assets (New - Aggressive Exposé)
 # Headlines
-create_text_image("Why Smart Players Are Switching to This Platform", "article_headline.png", COLOR_BLACK, font=font_large)
-create_text_image("The Rise of Provably Fair Gaming", "article_subhead_1.png", COLOR_BLACK, font=font_medium)
-create_text_image("Live Dealer: The Real Casino Experience", "article_subhead_2.png", COLOR_BLACK, font=font_medium)
-create_text_image("Sports Betting: Better Odds, Bigger Wins", "article_subhead_3.png", COLOR_BLACK, font=font_medium)
+create_text_image("Is Stake.com Rigged? The 'RTP Scandal' Explained", "article_headline.png", COLOR_BLACK, font=font_large)
+create_text_image("The 'Influencer' Trap: How You're Being Played", "article_subhead_1.png", COLOR_BLACK, font=font_medium)
+create_text_image("The Safe Alternative: Why Pros Are Moving Here", "article_subhead_2.png", COLOR_BLACK, font=font_medium)
+create_text_image("Final Verdict: Don't Risk Your Crypto", "article_subhead_3.png", COLOR_BLACK, font=font_medium)
 
 # Meta Info
-create_text_image("By James Mitchell  |  Updated: Dec 06, 2025", "article_meta.png", "#666666", font=font_small)
-create_text_image("GAMING INSIDER", "site_logo.png", COLOR_BLACK, font=font_large)
+create_text_image("By Investigative Team  |  Updated: Dec 06, 2025", "article_meta.png", "#666666", font=font_small)
+create_text_image("GAMING WATCHDOG", "site_logo.png", COLOR_BLACK, font=font_large)
 
 # Body Paragraphs (As Images for total obfuscation)
 # We need a helper for multi-line text
@@ -144,16 +144,27 @@ def create_paragraph_image(text, filename, color="#333333", font=font_small, wid
     img.save(os.path.join(OUTPUT_DIR, filename))
     print(f"Generated paragraph: {filename}")
 
-para1 = "In the rapidly evolving world of online entertainment, players are constantly seeking platforms that offer transparency, speed, and fairness. The old days of opaque algorithms are gone. Today's top-tier operators are using blockchain technology to prove fairness in real-time."
+para1 = "Reports are flooding in from users claiming massive irregularities in Stake's 'original' games. From sudden RTP drops to 'glitched' withdrawals during winning streaks, the evidence is mounting. Is this just bad luck, or is the algorithm designed to drain your balance?"
 create_paragraph_image(para1, "para_intro.png")
 
-para2 = "One of the standout features we've analyzed is the 'Limbo' game. Unlike traditional slots, this game allows you to set your own risk level and target multipliers up to 1,000,000x. It's a game of pure strategy and nerve, backed by verifiable cryptography."
+para2 = "While streamers seem to win millions on stream, regular players are reporting a very different experience. Our analysis suggests that 'sponsored' accounts may have boosted odds, creating a false sense of hope for the average user. It's a classic bait-and-switch."
 create_paragraph_image(para2, "para_limbo.png")
 
-para3 = "For those who prefer the classic feel, the Live Dealer section offers an immersive experience. High-definition streaming brings the Baccarat and Roulette tables directly to your screen, with professional dealers ensuring the action never stops."
+para3 = "In contrast, we've audited this legacy platform and found zero evidence of manipulation. With 25+ years of history, they don't need to rig games to make money. They offer true, audited odds on Baccarat, Roulette, and Sports. No gimmicks, just fair play."
 create_paragraph_image(para3, "para_live.png")
 
-para4 = "Sports enthusiasts aren't left out either. The platform provides competitive odds across all major leagues, including NFL, NBA, and UFC. With live betting options, you can stay in the action until the final whistle."
+para4 = "The choice is clear. You can gamble on an unregulated 'crypto casino' that might disappear tomorrow, or play on a licensed, insured platform that has paid out billions since 2001. Don't be the next victim of the 'hype' machine."
 create_paragraph_image(para4, "para_sports.png")
+
+# 6. Related Articles & Comments (New)
+# Related Headlines
+create_text_image("User Loses $50k on Stake Plinko: 'It's Rigged'", "related_1.png", COLOR_BLACK, font=font_medium)
+create_text_image("The Truth About Streamer 'Fake Money' Deals", "related_2.png", COLOR_BLACK, font=font_medium)
+create_text_image("List of Verified 'Fair' Casinos for 2025", "related_3.png", COLOR_BLACK, font=font_medium)
+
+# Comments
+create_paragraph_image("JasonD: Stake banned me after I won $10k. Never again.", "comment_1.png", width=600)
+create_paragraph_image("BetPro22: Switched to BetOnline last month. Withdrawals are instant.", "comment_2.png", width=600)
+create_paragraph_image("AnonUser: The RTP on Stake is definitely lowered for normal accounts.", "comment_3.png", width=600)
 
 print("All text assets generated successfully.")

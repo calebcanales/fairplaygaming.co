@@ -18,12 +18,12 @@ export default function Home() {
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-8">
             {/* Site Logo (Image) */}
-            <img src="/images/text/site_logo.png" alt="Gaming Insider" className="h-8 w-auto" />
+            <img src="/images/text/site_logo.png" alt="Gaming Watchdog" className="h-8 w-auto" />
             <nav className="hidden md:flex items-center gap-6 text-sm font-sans font-bold text-gray-800 uppercase tracking-wider">
-              <a href="#" className="hover:text-red-600 transition-colors">News</a>
-              <a href="#" className="hover:text-red-600 transition-colors">Reviews</a>
-              <a href="#" className="hover:text-red-600 transition-colors">Strategy</a>
-              <a href="#" className="hover:text-red-600 transition-colors">Industry</a>
+              <a href="#" className="hover:text-red-600 transition-colors">Investigations</a>
+              <a href="#" className="hover:text-red-600 transition-colors">Scam Alerts</a>
+              <a href="#" className="hover:text-red-600 transition-colors">Verified Sites</a>
+              <a href="#" className="hover:text-red-600 transition-colors">Player Reports</a>
             </nav>
           </div>
           <div className="flex items-center gap-4">
@@ -42,9 +42,9 @@ export default function Home() {
             {/* Article Header */}
             <div className="space-y-6">
               <div className="flex items-center gap-2 text-xs font-sans font-bold text-red-600 uppercase tracking-wider">
-                <span>Review</span>
+                <span>Investigation</span>
                 <span>•</span>
-                <span>Online Gaming</span>
+                <span>Crypto Scams</span>
               </div>
               
               {/* Headline Image */}
@@ -130,6 +130,33 @@ export default function Home() {
                 />
               </div>
 
+              <Separator className="my-12" />
+
+              {/* Comments Section (Fake Social Proof) */}
+              <div className="space-y-8">
+                <h3 className="font-sans font-bold text-xl uppercase tracking-wider">Discussion</h3>
+                <div className="space-y-6">
+                  {[
+                    { user: "CryptoKing99", img: "comment_1.png", time: "2h ago" },
+                    { user: "SarahJ", img: "comment_2.png", time: "5h ago" },
+                    { user: "MikeT", img: "comment_3.png", time: "1d ago" }
+                  ].map((comment, i) => (
+                    <div key={i} className="flex gap-4">
+                      <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center font-bold text-gray-500 shrink-0">
+                        {comment.user[0]}
+                      </div>
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2">
+                          <span className="font-bold text-sm">{comment.user}</span>
+                          <span className="text-xs text-gray-400">• {comment.time}</span>
+                        </div>
+                        <img src={`/images/text/${comment.img}`} alt="Comment" className="h-auto w-full max-w-md opacity-80" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -157,14 +184,18 @@ export default function Home() {
                 </div>
               </Card>
 
-              {/* "Trending" List (Fake) */}
+              {/* Related Articles Widget */}
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-                <h3 className="font-sans font-bold text-gray-900 uppercase tracking-wider mb-4">Trending Now</h3>
-                <ul className="space-y-4">
-                  {[1, 2, 3, 4].map((i) => (
-                    <li key={i} className="flex gap-4 items-start group cursor-pointer">
-                      <span className="text-2xl font-bold text-gray-300 group-hover:text-red-500 font-sans">{i}</span>
-                      <div className="h-3 bg-gray-200 rounded w-full mt-2 group-hover:bg-gray-300 transition-colors"></div>
+                <h3 className="font-sans font-bold text-gray-900 uppercase tracking-wider mb-4">Related Stories</h3>
+                <ul className="space-y-6">
+                  {[
+                    { img: "related_1.png", cat: "Strategy" },
+                    { img: "related_2.png", cat: "Safety" },
+                    { img: "related_3.png", cat: "Banking" }
+                  ].map((item, i) => (
+                    <li key={i} className="group cursor-pointer" onClick={handlePlayClick}>
+                      <div className="text-xs font-bold text-red-600 mb-1 uppercase">{item.cat}</div>
+                      <img src={`/images/text/${item.img}`} alt="Related" className="w-full group-hover:opacity-70 transition-opacity" />
                     </li>
                   ))}
                 </ul>
@@ -182,8 +213,8 @@ export default function Home() {
           <div className="col-span-2">
             <img src="/images/text/site_logo.png" alt="Logo" className="h-6 w-auto invert mb-4" />
             <p className="text-gray-400 text-sm max-w-sm">
-              The leading source for independent gaming news, reviews, and strategy. 
-              Dedicated to transparency and player advocacy since 2025.
+              The industry's leading watchdog for online gaming fairness. 
+              Exposing scams and verifying legitimate platforms since 2025.
             </p>
           </div>
           <div>
@@ -205,7 +236,7 @@ export default function Home() {
         </div>
         <Separator className="my-8 bg-gray-800" />
         <div className="container text-center text-xs text-gray-500">
-          &copy; 2025 Gaming Insider. All rights reserved.
+          &copy; 2025 Gaming Watchdog. All rights reserved.
         </div>
       </footer>
     </div>
