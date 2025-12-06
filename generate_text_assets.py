@@ -184,13 +184,23 @@ def create_savage_hero():
         font_huge = ImageFont.truetype(font_path, 120)
         font_massive = ImageFont.truetype(font_path, 200)
         
-        # Load Logos
-        stake_logo_path = os.path.join(OUTPUT_DIR, "../stake_logo_raw.png")
-        bol_logo_path = os.path.join(OUTPUT_DIR, "../betonline_logo_raw.png")
+        # Load Logos (User Provided)
+        stake_logo_path = os.path.join(OUTPUT_DIR, "../stake_logo_user.jpg")
+        bol_logo_path = os.path.join(OUTPUT_DIR, "../betlogo.webp")
         
         # Process Stake Logo (Resize and center)
         if os.path.exists(stake_logo_path):
             stake_logo = Image.open(stake_logo_path).convert("RGBA")
+            # Remove white background if needed (simple threshold)
+            datas = stake_logo.getdata()
+            newData = []
+            for item in datas:
+                if item[0] > 200 and item[1] > 200 and item[2] > 200:
+                    newData.append((255, 255, 255, 0))
+                else:
+                    newData.append(item)
+            stake_logo.putdata(newData)
+            
             # Resize to width 400
             ratio = 400 / stake_logo.width
             new_height = int(stake_logo.height * ratio)
