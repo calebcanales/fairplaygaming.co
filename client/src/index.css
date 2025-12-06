@@ -61,9 +61,11 @@
   
   --radius: 0.5rem;
   
-  /* Light Mode (Review Site Style - Clean) */
-  --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0 0);
+  /* Editorial / News Site Style */
+  --background: oklch(1 0 0); /* Pure White */
+  --foreground: oklch(0.2 0 0); /* Dark Grey text, not pitch black for readability */
+  --font-serif: "Merriweather", "Georgia", serif; /* Editorial Headings */
+  --font-sans: "Inter", "Helvetica Neue", sans-serif; /* Body text */
   
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.15 0 0);

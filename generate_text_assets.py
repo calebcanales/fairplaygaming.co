@@ -96,4 +96,64 @@ create_text_image("50% WELCOME BONUS", "bonus_title.png", COLOR_BLACK)
 create_text_image("UP TO $1,000", "bonus_amount.png", COLOR_RED)
 create_text_image("USE PROMO CODE: BOL1000", "promo_code.png", COLOR_BLACK, font=font_medium)
 
+# 5. Editorial / Article Assets (New)
+# Headlines
+create_text_image("Why Smart Players Are Switching to This Platform", "article_headline.png", COLOR_BLACK, font=font_large)
+create_text_image("The Rise of Provably Fair Gaming", "article_subhead_1.png", COLOR_BLACK, font=font_medium)
+create_text_image("Live Dealer: The Real Casino Experience", "article_subhead_2.png", COLOR_BLACK, font=font_medium)
+create_text_image("Sports Betting: Better Odds, Bigger Wins", "article_subhead_3.png", COLOR_BLACK, font=font_medium)
+
+# Meta Info
+create_text_image("By James Mitchell  |  Updated: Dec 06, 2025", "article_meta.png", "#666666", font=font_small)
+create_text_image("GAMING INSIDER", "site_logo.png", COLOR_BLACK, font=font_large)
+
+# Body Paragraphs (As Images for total obfuscation)
+# We need a helper for multi-line text
+def create_paragraph_image(text, filename, color="#333333", font=font_small, width=800):
+    # Simple word wrap
+    lines = []
+    words = text.split()
+    current_line = []
+    
+    # Create a dummy draw to measure
+    dummy_img = Image.new('RGBA', (1, 1))
+    draw = ImageDraw.Draw(dummy_img)
+    
+    for word in words:
+        test_line = ' '.join(current_line + [word])
+        bbox = draw.textbbox((0, 0), test_line, font=font)
+        if bbox[2] > width:
+            lines.append(' '.join(current_line))
+            current_line = [word]
+        else:
+            current_line.append(word)
+    lines.append(' '.join(current_line))
+    
+    # Calculate height
+    line_height = draw.textbbox((0, 0), "Hg", font=font)[3] + 10 # +10 for line spacing
+    img_height = len(lines) * line_height
+    
+    img = Image.new('RGBA', (width + 20, img_height + 20), (0,0,0,0))
+    draw = ImageDraw.Draw(img)
+    
+    y = 0
+    for line in lines:
+        draw.text((0, y), line, font=font, fill=color)
+        y += line_height
+        
+    img.save(os.path.join(OUTPUT_DIR, filename))
+    print(f"Generated paragraph: {filename}")
+
+para1 = "In the rapidly evolving world of online entertainment, players are constantly seeking platforms that offer transparency, speed, and fairness. The old days of opaque algorithms are gone. Today's top-tier operators are using blockchain technology to prove fairness in real-time."
+create_paragraph_image(para1, "para_intro.png")
+
+para2 = "One of the standout features we've analyzed is the 'Limbo' game. Unlike traditional slots, this game allows you to set your own risk level and target multipliers up to 1,000,000x. It's a game of pure strategy and nerve, backed by verifiable cryptography."
+create_paragraph_image(para2, "para_limbo.png")
+
+para3 = "For those who prefer the classic feel, the Live Dealer section offers an immersive experience. High-definition streaming brings the Baccarat and Roulette tables directly to your screen, with professional dealers ensuring the action never stops."
+create_paragraph_image(para3, "para_live.png")
+
+para4 = "Sports enthusiasts aren't left out either. The platform provides competitive odds across all major leagues, including NFL, NBA, and UFC. With live betting options, you can stay in the action until the final whistle."
+create_paragraph_image(para4, "para_sports.png")
+
 print("All text assets generated successfully.")
