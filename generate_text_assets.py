@@ -184,15 +184,46 @@ def create_savage_hero():
         font_huge = ImageFont.truetype(font_path, 120)
         font_massive = ImageFont.truetype(font_path, 200)
         
-        # Left Side (Stake/Rigged)
-        draw.text((width*0.25, height*0.3), "STAKE", font=font_huge, fill="white", anchor="mm")
-        draw.text((width*0.25, height*0.5), "RIGGED?", font=font_massive, fill="#ff0000", anchor="mm")
-        draw.text((width*0.25, height*0.65), "WARNING: LOW RTP", font=font_medium, fill="white", anchor="mm")
+        # Load Logos
+        stake_logo_path = os.path.join(OUTPUT_DIR, "../stake_logo_raw.png")
+        bol_logo_path = os.path.join(OUTPUT_DIR, "../betonline_logo_raw.png")
         
-        # Right Side (BetOnline/Trusted)
-        draw.text((width*0.75, height*0.3), "BETONLINE", font=font_huge, fill="white", anchor="mm")
-        draw.text((width*0.75, height*0.5), "TRUSTED", font=font_massive, fill="#84BD00", anchor="mm")
-        draw.text((width*0.75, height*0.65), "VERIFIED PAYOUTS", font=font_medium, fill="white", anchor="mm")
+        # Process Stake Logo (Resize and center)
+        if os.path.exists(stake_logo_path):
+            stake_logo = Image.open(stake_logo_path).convert("RGBA")
+            # Resize to width 400
+            ratio = 400 / stake_logo.width
+            new_height = int(stake_logo.height * ratio)
+            stake_logo = stake_logo.resize((400, new_height), Image.Resampling.LANCZOS)
+            # Paste centered on left side
+            logo_x = int(width*0.25 - stake_logo.width/2)
+            logo_y = int(height*0.25 - stake_logo.height/2)
+            img.paste(stake_logo, (logo_x, logo_y), stake_logo)
+        else:
+            draw.text((width*0.25, height*0.3), "STAKE", font=font_huge, fill="white", anchor="mm")
+
+        # Process BetOnline Logo (Resize and center)
+        if os.path.exists(bol_logo_path):
+            bol_logo = Image.open(bol_logo_path).convert("RGBA")
+            # Resize to width 500
+            ratio = 500 / bol_logo.width
+            new_height = int(bol_logo.height * ratio)
+            bol_logo = bol_logo.resize((500, new_height), Image.Resampling.LANCZOS)
+            # Paste centered on right side
+            logo_x = int(width*0.75 - bol_logo.width/2)
+            logo_y = int(height*0.25 - bol_logo.height/2)
+            img.paste(bol_logo, (logo_x, logo_y), bol_logo)
+        else:
+            draw.text((width*0.75, height*0.3), "BETONLINE", font=font_huge, fill="white", anchor="mm")
+
+        # Text Overlays (Moved down slightly to accommodate logos)
+        # Left Side
+        draw.text((width*0.25, height*0.55), "RIGGED?", font=font_massive, fill="#ff0000", anchor="mm", stroke_width=4, stroke_fill="black")
+        draw.text((width*0.25, height*0.75), "WARNING: LOW RTP", font=font_medium, fill="white", anchor="mm", stroke_width=2, stroke_fill="black")
+        
+        # Right Side
+        draw.text((width*0.75, height*0.55), "TRUSTED", font=font_massive, fill="#84BD00", anchor="mm", stroke_width=4, stroke_fill="black")
+        draw.text((width*0.75, height*0.75), "VERIFIED PAYOUTS", font=font_medium, fill="white", anchor="mm", stroke_width=2, stroke_fill="black")
         
         # Center VS
         # Draw a black circle behind VS for contrast
