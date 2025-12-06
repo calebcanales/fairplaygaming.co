@@ -61,11 +61,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Featured Image */}
-            <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
+            {/* Featured Image - SAVAGE COMPARISON */}
+            <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl border-4 border-red-600">
               <img 
-                src="/images/limbo_banner.png" 
-                alt="Featured Game" 
+                src="/images/text/hero_savage_final.png" 
+                alt="Stake vs BetOnline Comparison" 
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
                 onClick={handlePlayClick}
               />

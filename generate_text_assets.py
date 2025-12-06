@@ -167,4 +167,47 @@ create_paragraph_image("JasonD: Stake banned me after I won $10k. Never again.",
 create_paragraph_image("BetPro22: Switched to BetOnline last month. Withdrawals are instant.", "comment_2.png", width=600)
 create_paragraph_image("AnonUser: The RTP on Stake is definitely lowered for normal accounts.", "comment_3.png", width=600)
 
+# 7. Savage Hero Composite
+def create_savage_hero():
+    try:
+        # Load the background
+        bg_path = os.path.join(OUTPUT_DIR, "../hero_vs_bg.png")
+        if not os.path.exists(bg_path):
+            print("Hero BG not found, skipping composite.")
+            return
+            
+        img = Image.open(bg_path).convert("RGBA")
+        width, height = img.size
+        draw = ImageDraw.Draw(img)
+        
+        # Fonts
+        font_huge = ImageFont.truetype(font_path, 120)
+        font_massive = ImageFont.truetype(font_path, 200)
+        
+        # Left Side (Stake/Rigged)
+        draw.text((width*0.25, height*0.3), "STAKE", font=font_huge, fill="white", anchor="mm")
+        draw.text((width*0.25, height*0.5), "RIGGED?", font=font_massive, fill="#ff0000", anchor="mm")
+        draw.text((width*0.25, height*0.65), "WARNING: LOW RTP", font=font_medium, fill="white", anchor="mm")
+        
+        # Right Side (BetOnline/Trusted)
+        draw.text((width*0.75, height*0.3), "BETONLINE", font=font_huge, fill="white", anchor="mm")
+        draw.text((width*0.75, height*0.5), "TRUSTED", font=font_massive, fill="#84BD00", anchor="mm")
+        draw.text((width*0.75, height*0.65), "VERIFIED PAYOUTS", font=font_medium, fill="white", anchor="mm")
+        
+        # Center VS
+        # Draw a black circle behind VS for contrast
+        circle_radius = 100
+        center_x, center_y = width//2, height//2
+        draw.ellipse((center_x-circle_radius, center_y-circle_radius, center_x+circle_radius, center_y+circle_radius), fill="black")
+        draw.text((center_x, center_y), "VS", font=font_huge, fill="white", anchor="mm")
+        
+        # Save
+        img.save(os.path.join(OUTPUT_DIR, "hero_savage_final.png"))
+        print("Generated savage hero composite.")
+        
+    except Exception as e:
+        print(f"Error creating hero composite: {e}")
+
+create_savage_hero()
+
 print("All text assets generated successfully.")
