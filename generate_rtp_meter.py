@@ -22,9 +22,9 @@ def create_rtp_meter():
     draw = ImageDraw.Draw(img)
     
     # Meter Arc
-    center_x = 200
+    center_x = 180  # Moved slightly left
     center_y = 200
-    radius = 150
+    radius = 140    # Slightly smaller
     
     # Draw segments
     # Red (Low)
@@ -46,7 +46,7 @@ def create_rtp_meter():
     # Pointing to Green (High) ~ 330 degrees
     angle = 330
     angle_rad = math.radians(angle)
-    needle_len = 140
+    needle_len = 130
     end_x = center_x + needle_len * math.cos(angle_rad)
     end_y = center_y + needle_len * math.sin(angle_rad)
     
@@ -63,10 +63,10 @@ def create_rtp_meter():
         font_label = ImageFont.load_default()
         font_val = ImageFont.load_default()
         
-    # "Chance of Winning"
-    draw.text((400, 100), "Chance of Winning", font=font_label, fill=COLOR_TEXT, anchor="mm")
-    # "HIGH"
-    draw.text((400, 150), "HIGH", font=font_val, fill=COLOR_GREEN, anchor="mm")
+    # "Chance of Winning" - Moved right and up to avoid overlap
+    draw.text((420, 120), "Chance of Winning", font=font_label, fill=COLOR_TEXT, anchor="mm")
+    # "HIGH" - Below label
+    draw.text((420, 170), "HIGH", font=font_val, fill=COLOR_GREEN, anchor="mm")
     
     # Save
     output_path = os.path.join(OUTPUT_DIR, "rtp_meter.png")
