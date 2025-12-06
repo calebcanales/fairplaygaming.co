@@ -24,7 +24,14 @@ except:
     font_medium = ImageFont.load_default()
     font_small = ImageFont.load_default()
 
-def create_text_image(text, filename, color, bg_color=None, font=font_large, padding=20):
+def create_text_image(text, filename, color, bg_color=None, font=font_large, padding=20, font_path=None, font_size=None):
+    # Use custom font if provided
+    if font_path and font_size:
+        try:
+            font = ImageFont.truetype(font_path, font_size)
+        except:
+            pass
+
     # Calculate text size
     dummy_img = Image.new('RGBA', (1, 1))
     draw = ImageDraw.Draw(dummy_img)
@@ -109,7 +116,14 @@ create_text_image("GAMING WATCHDOG", "site_logo.png", COLOR_BLACK, font=font_lar
 
 # Body Paragraphs (As Images for total obfuscation)
 # We need a helper for multi-line text
-def create_paragraph_image(text, filename, color="#333333", font=font_small, width=800):
+def create_paragraph_image(text, filename, color="#333333", font=font_small, width=800, font_path=None, font_size=None):
+    # Use custom font if provided
+    if font_path and font_size:
+        try:
+            font = ImageFont.truetype(font_path, font_size)
+        except:
+            pass
+
     # Simple word wrap
     lines = []
     words = text.split()
@@ -167,6 +181,59 @@ create_paragraph_image("JasonD: Stake banned me after I won $10k. Never again.",
 create_paragraph_image("BetPro22: Switched to BetOnline last month. Withdrawals are instant.", "comment_2.png", width=600)
 create_paragraph_image("AnonUser: The RTP on Stake is definitely lowered for normal accounts.", "comment_3.png", width=600)
 
+# --- New Aggressive Content Sections ---
+
+# 1. Billionaire Owners Exposed
+create_text_image(
+    "THE BILLIONAIRE SCAM: HOW STAKE'S OWNERS GET RICH OFF YOU",
+    "article_subhead_owners.png",
+    color="#E31837", # Red
+    font_path=font_path,
+    font_size=36
+)
+
+create_paragraph_image(
+    "Meet the youngest billionaires in Australia: the owners of Stake.com. How did they get so rich so fast? By systematically increasing the house edge on their 'original' games without notifying players. While you're losing your hard-earned money on rigged plinko balls, they're buying $50 million mansions and laughing all the way to the bank.",
+    "para_owners.png",
+    width=800,
+    font_path=font_path,
+    font_size=20
+)
+
+# 2. Targeting the Youth
+create_text_image(
+    "PREDATORY TACTICS: TARGETING THE NEXT GENERATION",
+    "article_subhead_youth.png",
+    color="#E31837", # Red
+    font_path=font_path,
+    font_size=36
+)
+
+create_paragraph_image(
+    "Stake isn't just a casino; it's a predatory machine designed to hook the younger generation. By paying millions to streamers and influencers, they've turned gambling into a video game for Gen Z. But unlike a video game, when you lose here, you lose real money. They know exactly what they're doing: creating a generation of addicts to fund their billionaire lifestyles.",
+    "para_youth.png",
+    width=800,
+    font_path=font_path,
+    font_size=20
+)
+
+# 3. The Hidden House Edge
+create_text_image(
+    "THE SILENT THEFT: CRANKING UP THE HOUSE EDGE",
+    "article_subhead_edge.png",
+    color="#E31837", # Red
+    font_path=font_path,
+    font_size=36
+)
+
+create_paragraph_image(
+    "Think you have a fair shot? Think again. Insider reports suggest that Stake has quietly adjusted the RTP (Return to Player) on their most popular games, effectively increasing the house edge without any public announcement. This means your chances of winning are mathematically lower today than they were yesterday. It's not bad luck; it's a rigged system.",
+    "para_edge.png",
+    width=800,
+    font_path=font_path,
+    font_size=20
+)
+
 # 7. Savage Hero Composite
 def create_savage_hero():
     try:
@@ -201,45 +268,36 @@ def create_savage_hero():
                     newData.append(item)
             stake_logo.putdata(newData)
             
-            # Resize to width 400
-            ratio = 400 / stake_logo.width
+            # Resize to width 500
+            ratio = 500 / stake_logo.width
             new_height = int(stake_logo.height * ratio)
-            stake_logo = stake_logo.resize((400, new_height), Image.Resampling.LANCZOS)
+            stake_logo = stake_logo.resize((500, new_height), Image.Resampling.LANCZOS)
             # Paste centered on left side
             logo_x = int(width*0.25 - stake_logo.width/2)
-            logo_y = int(height*0.25 - stake_logo.height/2)
+            logo_y = int(height*0.5 - stake_logo.height/2)
             img.paste(stake_logo, (logo_x, logo_y), stake_logo)
         else:
-            draw.text((width*0.25, height*0.3), "STAKE", font=font_huge, fill="white", anchor="mm")
+            draw.text((width*0.25, height*0.5), "STAKE", font=font_huge, fill="white", anchor="mm")
 
         # Process BetOnline Logo (Resize and center)
         if os.path.exists(bol_logo_path):
             bol_logo = Image.open(bol_logo_path).convert("RGBA")
-            # Resize to width 500
-            ratio = 500 / bol_logo.width
+            # Resize to width 600
+            ratio = 600 / bol_logo.width
             new_height = int(bol_logo.height * ratio)
-            bol_logo = bol_logo.resize((500, new_height), Image.Resampling.LANCZOS)
+            bol_logo = bol_logo.resize((600, new_height), Image.Resampling.LANCZOS)
             # Paste centered on right side
             logo_x = int(width*0.75 - bol_logo.width/2)
-            logo_y = int(height*0.25 - bol_logo.height/2)
+            logo_y = int(height*0.5 - bol_logo.height/2)
             img.paste(bol_logo, (logo_x, logo_y), bol_logo)
         else:
-            draw.text((width*0.75, height*0.3), "BETONLINE", font=font_huge, fill="white", anchor="mm")
+            draw.text((width*0.75, height*0.5), "BETONLINE", font=font_huge, fill="white", anchor="mm")
 
-        # Text Overlays (Moved down slightly to accommodate logos)
-        # Left Side
-        draw.text((width*0.25, height*0.55), "RIGGED?", font=font_massive, fill="#ff0000", anchor="mm", stroke_width=4, stroke_fill="black")
-        draw.text((width*0.25, height*0.75), "WARNING: LOW RTP", font=font_medium, fill="white", anchor="mm", stroke_width=2, stroke_fill="black")
-        
-        # Right Side
-        draw.text((width*0.75, height*0.55), "TRUSTED", font=font_massive, fill="#84BD00", anchor="mm", stroke_width=4, stroke_fill="black")
-        draw.text((width*0.75, height*0.75), "VERIFIED PAYOUTS", font=font_medium, fill="white", anchor="mm", stroke_width=2, stroke_fill="black")
-        
         # Center VS
         # Draw a black circle behind VS for contrast
-        circle_radius = 100
+        circle_radius = 120
         center_x, center_y = width//2, height//2
-        draw.ellipse((center_x-circle_radius, center_y-circle_radius, center_x+circle_radius, center_y+circle_radius), fill="black")
+        draw.ellipse((center_x-circle_radius, center_y-circle_radius, center_x+circle_radius, center_y+circle_radius), fill="black", outline="white", width=5)
         draw.text((center_x, center_y), "VS", font=font_huge, fill="white", anchor="mm")
         
         # Save

@@ -72,15 +72,31 @@ export default function Home() {
             </div>
 
             {/* Article Body */}
-            <div className="prose prose-lg max-w-none space-y-8">
+            <div className="prose prose-lg max-w-none space-y-10">
               
               {/* Intro Paragraph Image */}
               <img src="/images/text/para_intro.png" alt="Introduction" className="w-full" />
 
-              {/* Subhead 1 */}
+              {/* Section 1: Billionaire Owners */}
               <div className="pt-4">
-                <img src="/images/text/article_subhead_1.png" alt="Provably Fair" className="h-8 w-auto mb-4" />
-                <img src="/images/text/para_limbo.png" alt="Limbo Description" className="w-full mb-6" />
+                <img src="/images/text/article_subhead_owners.png" alt="Billionaire Scam" className="h-10 w-auto mb-4" />
+                <img src="/images/text/para_owners.png" alt="Owners Analysis" className="w-full mb-6" />
+                <div className="bg-red-50 border-l-4 border-red-600 p-4 italic text-gray-700 font-serif">
+                  "They're buying $50 million mansions while you lose your rent money on rigged plinko balls."
+                </div>
+              </div>
+
+              {/* Section 2: Targeting Youth */}
+              <div className="pt-4">
+                <img src="/images/text/article_subhead_youth.png" alt="Predatory Tactics" className="h-10 w-auto mb-4" />
+                <img src="/images/text/para_youth.png" alt="Youth Targeting" className="w-full mb-6" />
+                <img src="/images/limbo_var08.png" alt="Gamified Gambling" className="w-full rounded-lg shadow-md border border-gray-200" />
+              </div>
+
+              {/* Section 3: Hidden House Edge */}
+              <div className="pt-4">
+                <img src="/images/text/article_subhead_edge.png" alt="Hidden Edge" className="h-10 w-auto mb-4" />
+                <img src="/images/text/para_edge.png" alt="RTP Manipulation" className="w-full mb-6" />
                 
                 {/* In-Article Ad / CTA */}
                 <div className="my-8 p-6 bg-gray-50 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-6">
@@ -102,12 +118,12 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Subhead 2 */}
+              {/* Section 4: The Safe Alternative */}
               <div className="pt-4">
-                <img src="/images/text/article_subhead_2.png" alt="Live Dealer" className="h-8 w-auto mb-4" />
+                <img src="/images/text/article_subhead_2.png" alt="Safe Alternative" className="h-8 w-auto mb-4" />
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <img 
-                    src="/images/baccarat_tall.png" 
+                    src="/images/baccarat_var08.png" 
                     alt="Baccarat" 
                     className="rounded-lg shadow-md w-full object-cover cursor-pointer"
                     onClick={handlePlayClick}
@@ -118,10 +134,10 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Subhead 3 */}
+              {/* Section 5: Conclusion */}
               <div className="pt-4">
-                <img src="/images/text/article_subhead_3.png" alt="Sportsbook" className="h-8 w-auto mb-4" />
-                <img src="/images/text/para_sports.png" alt="Sports Description" className="w-full mb-6" />
+                <img src="/images/text/article_subhead_3.png" alt="Final Verdict" className="h-8 w-auto mb-4" />
+                <img src="/images/text/para_sports.png" alt="Conclusion" className="w-full mb-6" />
                 <img 
                   src="/images/text/sportsbook.png" 
                   alt="Sportsbook Banner" 
