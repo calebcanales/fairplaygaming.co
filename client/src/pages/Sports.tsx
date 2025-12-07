@@ -4,8 +4,8 @@ import { Separator } from "@/components/ui/separator";
 import { Share2, MessageCircle, Bookmark, ShieldCheck, TrendingUp, DollarSign } from "lucide-react";
 
 export default function Sports() {
-  // Placeholder Affiliate Link - Will update when user provides it
-  const SPORTS_AFFILIATE_LINK = "https://www.betonline.ag/sportsbook?btag=7CsLV9Cjfh-LwWqgACq1AWNd7ZgqdRLk&affid=114233";
+  // Affiliate Link
+  const SPORTS_AFFILIATE_LINK = "https://record.betonlineaffiliates.ag/_xMg1uUiES83ABa8v4kUGqGNd7ZgqdRLk/1/";
 
   const handlePlayClick = () => {
     window.location.href = SPORTS_AFFILIATE_LINK;
@@ -38,14 +38,14 @@ export default function Sports() {
             
             {/* Article Header */}
             <div className="space-y-6">
-              <div className="flex items-center gap-2 text-xs font-sans font-bold text-blue-600 uppercase tracking-wider">
-                <span>Analysis</span>
+              <div className="flex items-center gap-2 text-xs font-sans font-bold text-green-600 uppercase tracking-wider">
+                <span>Verified Review</span>
                 <span>•</span>
-                <span>Sports Betting</span>
+                <span>Sports Betting Authority</span>
               </div>
               
               <h1 className="font-sans font-black text-4xl md:text-5xl leading-tight text-gray-900">
-                Why Smart Bettors Are Leaving Stake for BetOnline Sportsbook
+                BetOnline Sportsbook Review: The Most Trusted Name in Online Betting for 25+ Years
               </h1>
               
               <div className="flex items-center justify-between border-y border-gray-100 py-4">
@@ -69,7 +69,7 @@ export default function Sports() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                 <div className="text-white font-sans font-bold text-xl">
-                  Comparison: Odds, Limits, and Payout Reliability
+                  Industry Leader: Highest Limits, Fastest Payouts, and Best Odds
                 </div>
               </div>
             </div>
@@ -77,19 +77,19 @@ export default function Sports() {
             {/* Article Body */}
             <div className="prose prose-lg max-w-none space-y-8">
               <p className="lead text-xl text-gray-600">
-                While Stake.com focuses on flashy celebrity partnerships, serious sports bettors are quietly migrating to platforms that offer better odds, higher limits, and faster payouts. Here is why BetOnline is winning the war for professional handicappers.
+                For over two decades, one name has stood above the rest in the world of online sports betting. BetOnline isn't just another sportsbook; it's an institution. Known for the earliest lines, highest limits, and fastest payouts in the industry, it remains the top choice for both professional handicappers and casual fans alike.
               </p>
 
-              {/* Point 1: Better Odds */}
+              {/* Point 1: Market Leading Odds */}
               <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <TrendingUp className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">1. Superior Odds & Reduced Juice</h3>
+                    <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">1. Market-Leading Odds & Early Lines</h3>
                     <p className="text-gray-700 mb-4">
-                      Our analysis of 500 NFL and NBA games showed that BetOnline offers consistently better lines. While Stake often shades lines heavily against public favorites, BetOnline provides reduced juice options that save bettors thousands over a season.
+                      BetOnline is famous for "setting the market." They are often the first sportsbook in the world to post opening lines for NFL, NBA, and major sporting events. This allows sharp bettors to lock in value before the rest of the market adjusts. Combined with reduced juice options, BetOnline offers mathematically superior value to players.
                     </p>
                     <img 
                       src="/images/banner_nfl_welcome.png" 
@@ -101,16 +101,16 @@ export default function Sports() {
                 </div>
               </div>
 
-              {/* Point 2: High Limits */}
+              {/* Point 2: VIP Treatment */}
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                 <div className="flex items-start gap-4">
                   <div className="bg-green-100 p-3 rounded-full">
                     <DollarSign className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">2. No-Nonsense High Limits</h3>
+                    <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">2. High Limits & VIP Rewards</h3>
                     <p className="text-gray-700 mb-4">
-                      Stake is notorious for limiting winning players quickly. BetOnline has a reputation for taking the sharpest action in the world without banning winners. If you want to bet big without fear of account closure, the choice is clear.
+                      Unlike newer "soft" books that limit winners, BetOnline welcomes action. They offer some of the highest betting limits in the industry, making them the preferred home for high-rollers. Their VIP program rewards loyalty with generous bonuses, reload offers, and dedicated account management.
                     </p>
                     <img 
                       src="/images/banner_vip_rewards.png" 
@@ -122,16 +122,16 @@ export default function Sports() {
                 </div>
               </div>
 
-              {/* Point 3: Reliability */}
+              {/* Point 3: Crypto Pioneer */}
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <div className="flex items-start gap-4">
                   <div className="bg-gray-200 p-3 rounded-full">
                     <ShieldCheck className="h-6 w-6 text-gray-700" />
                   </div>
                   <div>
-                    <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">3. 25+ Years of Reliability</h3>
+                    <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">3. The Crypto Betting Pioneer</h3>
                     <p className="text-gray-700 mb-4">
-                      New crypto books come and go. BetOnline has been paying out winners for over two decades. In an industry full of rug-pulls, longevity is the ultimate proof of legitimacy.
+                      BetOnline was one of the first major sportsbooks to fully embrace cryptocurrency. They support a wide range of coins including Bitcoin, Ethereum, and Solana, offering instant deposits and same-day withdrawals. Their crypto-first approach ensures privacy, security, and speed for every transaction.
                     </p>
                     <img 
                       src="/images/banner_crypto_deposit.png" 
