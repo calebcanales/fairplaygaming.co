@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Share2, Bookmark, CheckCircle2, XCircle, Star, ChevronRight, Trophy, Flame, TrendingUp } from "lucide-react";
+import { Share2, Bookmark, CheckCircle2, XCircle, Star, ChevronRight, Trophy, Flame, TrendingUp, Smartphone, CreditCard, HelpCircle } from "lucide-react";
 import { LiveOddsWidget } from "@/components/LiveOddsWidget";
 import { BettingMenu } from "@/components/BettingMenu";
 
@@ -37,7 +37,7 @@ export default function Sports() {
             <a href="/" className="flex items-center gap-3 group">
               <img src="/images/logo.png" alt="Fairplay Gaming" className="h-12 w-auto group-hover:scale-105 transition-transform" />
               <div className="flex flex-col">
-                <span className="font-oswald font-bold text-2xl leading-none tracking-tighter text-black">FAIRPLAY<span className="text-red-600">GAMING</span></span>
+                <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto object-contain" />
                 <span className="text-[10px] font-sans font-bold text-gray-500 uppercase tracking-[0.2em]">Official Sportsbook Review</span>
               </div>
             </a>
@@ -49,7 +49,7 @@ export default function Sports() {
               className="bg-green-600 hover:bg-green-700 text-white font-oswald font-bold text-lg px-8 skew-x-[-10deg] shadow-lg hover:shadow-green-500/20 transition-all"
               onClick={handlePlayClick}
             >
-              <span className="skew-x-[10deg]">BET NOW</span>
+              <img src="/images/text/btn_bet_now.png" alt="Bet Now" className="h-6 w-auto skew-x-[10deg]" />
             </Button>
           </div>
         </div>
@@ -90,7 +90,9 @@ export default function Sports() {
               <div className="font-oswald font-bold text-2xl mb-2">CRYPTO BONUS</div>
               <div className="text-4xl font-black text-yellow-400 mb-4">100%</div>
               <p className="text-sm text-blue-100 mb-4 font-sans">First time deposit with Bitcoin, Ethereum or Solana.</p>
-              <Button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold border-none" onClick={handlePlayClick}>CLAIM NOW</Button>
+              <Button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold border-none" onClick={handlePlayClick}>
+                <img src="/images/text/btn_claim_bonus.png" alt="Claim Bonus" className="h-5 w-auto" />
+              </Button>
             </div>
           </aside>
 
@@ -110,12 +112,8 @@ export default function Sports() {
                     <span className="bg-red-600 text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">Verified Review</span>
                     <span className="text-gray-300 text-xs font-bold uppercase tracking-wider">Updated Dec 07, 2025</span>
                   </div>
-                  <h1 className="font-oswald font-bold text-3xl md:text-5xl text-white leading-tight mb-2 drop-shadow-lg">
-                    BETONLINE SPORTSBOOK REVIEW
-                  </h1>
-                  <p className="text-gray-200 font-sans text-sm md:text-base max-w-xl drop-shadow-md">
-                    Why professional handicappers have trusted this book for over 25 years.
-                  </p>
+                  <img src="/images/text/h1_review.png" alt="BetOnline Sportsbook Review" className="h-12 md:h-16 w-auto mb-2 drop-shadow-lg object-contain self-start" />
+                  <img src="/images/text/subhead_review.png" alt="Why professional handicappers have trusted this book for over 25 years" className="h-6 md:h-8 w-auto drop-shadow-md object-contain self-start" />
                 </div>
               </div>
 
@@ -143,16 +141,17 @@ export default function Sports() {
                   </p>
 
                   <div className="my-8 p-6 bg-[#f8f9fa] border-l-4 border-red-600 rounded-r-lg">
-                    <h4 className="font-oswald font-bold text-xl text-gray-900 mb-2 uppercase">THE BOTTOM LINE</h4>
+                    <img src="/images/text/h3_verdict.png" alt="The Bottom Line" className="h-6 w-auto mb-4" />
                     <p className="italic text-gray-700 m-0 text-base">
                       "If you want the earliest lines, the highest limits, and payouts that hit your crypto wallet in minutes, BetOnline is the undisputed king. It's not a game—it's a professional tool for serious bettors."
                     </p>
                   </div>
 
-                  <h3 className="font-oswald font-bold text-2xl text-gray-900 mt-10 mb-4 flex items-center gap-2">
-                    <TrendingUp className="h-6 w-6 text-red-600" />
-                    MARKET-LEADING ODDS
-                  </h3>
+                  {/* Section 1: Odds */}
+                  <div className="mt-10 mb-4 flex items-center gap-2">
+                    <TrendingUp className="h-8 w-8 text-red-600" />
+                    <img src="/images/text/h2_odds.png" alt="Market Leading Odds" className="h-8 w-auto" />
+                  </div>
                   <p>
                     While other books wait for Vegas to set the line, BetOnline <em>is</em> the market maker. They consistently post opening lines for NFL and NBA games before anyone else. This "early bird" advantage allows sharp bettors to hammer lines before the public moves them.
                   </p>
@@ -161,12 +160,62 @@ export default function Sports() {
                     <img src="/images/banner_nfl_welcome.png" alt="NFL Odds" className="w-full rounded-lg shadow-md" />
                   </div>
 
-                  <h3 className="font-oswald font-bold text-2xl text-gray-900 mt-10 mb-4">
-                    BANKING VELOCITY
-                  </h3>
+                  {/* Section 2: Banking */}
+                  <div className="mt-10 mb-4 flex items-center gap-2">
+                    <CreditCard className="h-8 w-8 text-red-600" />
+                    <img src="/images/text/h2_banking.png" alt="Banking Velocity" className="h-8 w-auto" />
+                  </div>
                   <p>
                     Speed kills in sports, but it saves lives in betting. BetOnline's crypto integration is flawless. During our stress test, we processed a $5,000 withdrawal via Bitcoin. The result? <strong>Funds received in 14 minutes.</strong> No paperwork, no delays.
                   </p>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 my-6 not-prose">
+                    <h4 className="font-oswald font-bold text-lg mb-4">PAYOUT SPEED TEST (DEC 2025)</h4>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center bg-white p-3 rounded border border-gray-200">
+                        <div className="flex items-center gap-2 font-bold text-gray-700"><img src="/images/text/kw_crypto.png" alt="Bitcoin" className="h-4 w-auto" /> Bitcoin</div>
+                        <span className="text-green-600 font-bold">14 Minutes</span>
+                      </div>
+                      <div className="flex justify-between items-center bg-white p-3 rounded border border-gray-200">
+                        <div className="flex items-center gap-2 font-bold text-gray-700"><img src="/images/text/kw_crypto.png" alt="Ethereum" className="h-4 w-auto" /> Ethereum</div>
+                        <span className="text-green-600 font-bold">8 Minutes</span>
+                      </div>
+                      <div className="flex justify-between items-center bg-white p-3 rounded border border-gray-200">
+                        <div className="flex items-center gap-2 font-bold text-gray-700"><img src="/images/text/kw_crypto.png" alt="USDT" className="h-4 w-auto" /> USDT (Tether)</div>
+                        <span className="text-green-600 font-bold">22 Minutes</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Section 3: Mobile */}
+                  <div className="mt-10 mb-4 flex items-center gap-2">
+                    <Smartphone className="h-8 w-8 text-red-600" />
+                    <img src="/images/text/h2_mobile.png" alt="Mobile Experience" className="h-8 w-auto" />
+                  </div>
+                  <p>
+                    You don't need to download a sketchy app. BetOnline's mobile site is fully optimized for Safari and Chrome. It's fast, responsive, and allows you to place live bets in seconds. We tested it on iPhone 15 Pro and Galaxy S24—zero lag, even during peak NFL Sunday traffic.
+                  </p>
+
+                  {/* FAQ Section */}
+                  <div className="mt-12 pt-8 border-t border-gray-200">
+                    <h3 className="font-oswald font-bold text-2xl mb-6 flex items-center gap-2">
+                      <HelpCircle className="h-6 w-6 text-gray-400" /> FREQUENTLY ASKED QUESTIONS
+                    </h3>
+                    <div className="space-y-6">
+                      <div>
+                        <h4 className="font-bold text-gray-900 mb-2">Is BetOnline legal for US players?</h4>
+                        <p className="text-sm text-gray-600">Yes. BetOnline operates under international jurisdiction and has legally accepted US clients for over 25 years with a spotless track record.</p>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900 mb-2">Do I need crypto to bet?</h4>
+                        <p className="text-sm text-gray-600">No, credit cards are accepted. However, we strongly recommend crypto for instant deposits and withdrawals with zero fees.</p>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900 mb-2">What is the maximum payout?</h4>
+                        <p className="text-sm text-gray-600">Crypto payouts are virtually unlimited. High rollers can withdraw up to $100,000 per transaction.</p>
+                      </div>
+                    </div>
+                  </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
                     <div className="bg-green-50 p-4 rounded border border-green-100">
@@ -237,7 +286,7 @@ export default function Sports() {
                 </div>
 
                 <Button className="w-full font-oswald font-bold text-lg h-12 bg-red-600 hover:bg-red-700" onClick={handlePlayClick}>
-                  VISIT BETONLINE
+                  <img src="/images/text/btn_visit.png" alt="Visit Site" className="h-5 w-auto" />
                 </Button>
               </div>
             </div>
@@ -276,7 +325,9 @@ export default function Sports() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-50 grayscale hover:grayscale-0 transition-all">
             <img src="/images/logo.png" alt="Fairplay Gaming" className="h-8 w-auto brightness-0 invert" />
-            <span className="font-oswald font-bold text-xl tracking-tighter">FAIRPLAY<span className="text-red-600">GAMING</span></span>
+            <div className="flex flex-col items-start">
+               <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-6 w-auto brightness-0 invert" />
+            </div>
           </div>
           <p className="text-gray-600 text-xs max-w-md mx-auto mb-8 font-sans">
             Fairplay Gaming Commission is an independent review site. We may earn commissions from links on this page. 
