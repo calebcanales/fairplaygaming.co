@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Share2, MessageCircle, Bookmark, ThumbsUp } from "lucide-react";
@@ -21,9 +22,9 @@ export default function Home() {
             <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-12 w-auto" />
             <nav className="hidden md:flex items-center gap-6 text-sm font-sans font-bold text-gray-800 uppercase tracking-wider">
               <a href="#" className="hover:text-red-600 transition-colors">Investigations</a>
+              <Link href="/sports" className="hover:text-red-600 transition-colors text-red-600">Sports Analysis</Link>
               <a href="#" className="hover:text-red-600 transition-colors">Scam Alerts</a>
               <a href="#" className="hover:text-red-600 transition-colors">Verified Sites</a>
-              <a href="#" className="hover:text-red-600 transition-colors">Player Reports</a>
             </nav>
           </div>
           <div className="flex items-center gap-4">
