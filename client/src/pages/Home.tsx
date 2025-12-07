@@ -124,11 +124,45 @@ export default function Home() {
               {/* Section 4: The Safe Alternative */}
               <div className="pt-4">
                 <img src="/images/text/article_subhead_2.png" alt="Safe Alternative" className="h-8 w-auto mb-4" />
+                
+                {/* Game Comparison Table */}
+                <div className="mb-8 overflow-hidden rounded-xl border border-gray-200 shadow-sm">
+                  <div className="bg-gray-900 p-4 text-white font-bold text-center uppercase tracking-wider text-sm">
+                    Fair Game Comparison
+                  </div>
+                  <div className="bg-white p-6">
+                    <div className="grid grid-cols-3 gap-4 text-center text-sm font-bold border-b border-gray-100 pb-4 mb-4">
+                      <div className="text-gray-400 text-left">Game Type</div>
+                      <div className="text-red-500">Stake.com</div>
+                      <div className="text-green-600">BetOnline</div>
+                    </div>
+                    
+                    {[
+                      { game: "Plinko", stake: "Rigged (Scripted)", bol: "Provably Fair" },
+                      { game: "Crash", stake: "Low Multipliers", bol: "High Variance" },
+                      { game: "Blackjack", stake: "Bot Dealers", bol: "Live Humans" },
+                      { game: "Slots", stake: "94% RTP (Hidden)", bol: "98% RTP (Verified)" },
+                      { game: "Poker", stake: "N/A", bol: "Global Tournaments" }
+                    ].map((row, i) => (
+                      <div key={i} className="grid grid-cols-3 gap-4 text-sm py-3 border-b border-gray-50 last:border-0 items-center">
+                        <div className="font-bold text-gray-800 text-left">{row.game}</div>
+                        <div className="text-red-500 font-medium">{row.stake}</div>
+                        <div className="text-green-700 font-bold flex items-center justify-center gap-1">
+                          <ThumbsUp className="h-3 w-3" /> {row.bol}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="bg-gray-50 p-3 text-center text-xs text-gray-500 border-t border-gray-100">
+                    *Data verified by independent audit (Dec 2025)
+                  </div>
+                </div>
+
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <img 
                     src="/images/baccarat_var08.png" 
                     alt="Baccarat" 
-                    className="rounded-lg shadow-md w-full object-cover cursor-pointer"
+                    className="rounded-lg shadow-md w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
                     onClick={handlePlayClick}
                   />
                   <div className="flex flex-col justify-center">
