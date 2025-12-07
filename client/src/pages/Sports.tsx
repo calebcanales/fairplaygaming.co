@@ -35,11 +35,8 @@ export default function Sports() {
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-8">
             <a href="/" className="flex items-center gap-3 group">
-              <img src="/images/logo.png" alt="Fairplay Gaming" className="h-12 w-auto group-hover:scale-105 transition-transform" />
-              <div className="flex flex-col">
-                <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto object-contain" />
-                <span className="text-[10px] font-sans font-bold text-gray-500 uppercase tracking-[0.2em]">Official Sportsbook Review</span>
-              </div>
+              <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto object-contain" />
+              <span className="text-[10px] font-sans font-bold text-gray-500 uppercase tracking-[0.2em] border-l border-gray-300 pl-3 ml-1">Official Sportsbook Review</span>
             </a>
           </div>
           
@@ -107,11 +104,12 @@ export default function Sports() {
                   alt="BetOnline Sportsbook" 
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent flex flex-col justify-end p-6 md:p-8">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-end p-6 md:p-8">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="bg-red-600 text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">Verified Review</span>
                     <span className="text-gray-300 text-xs font-bold uppercase tracking-wider">Updated Dec 07, 2025</span>
                   </div>
+                  {/* Using White Text Assets for Contrast */}
                   <img src="/images/text/h1_review.png" alt="BetOnline Sportsbook Review" className="h-12 md:h-16 w-auto mb-2 drop-shadow-lg object-contain self-start" />
                   <img src="/images/text/subhead_review.png" alt="Why professional handicappers have trusted this book for over 25 years" className="h-6 md:h-8 w-auto drop-shadow-md object-contain self-start" />
                 </div>
@@ -324,10 +322,7 @@ export default function Sports() {
       <footer className="bg-[#121212] text-white py-12 mt-12 border-t border-gray-800">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <img src="/images/logo.png" alt="Fairplay Gaming" className="h-8 w-auto brightness-0 invert" />
-            <div className="flex flex-col items-start">
-               <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-6 w-auto brightness-0 invert" />
-            </div>
+            <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto brightness-0 invert" />
           </div>
           <p className="text-gray-600 text-xs max-w-md mx-auto mb-8 font-sans">
             Fairplay Gaming Commission is an independent review site. We may earn commissions from links on this page. 

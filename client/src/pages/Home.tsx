@@ -220,79 +220,65 @@ export default function Home() {
             {/* Operator Data Card - Professional & Trust-Focused */}
             <div className="sticky top-24 space-y-8">
               <Card className="bg-white border border-gray-200 shadow-lg overflow-hidden">
-                {/* Header */}
-                <div className="bg-gray-900 p-6 text-center">
-                  <img src="/images/text/brand_name_white.png" alt="BetOnline" className="h-6 w-auto mx-auto" />
+                <div className="bg-[#1a1a1a] p-4 text-center">
+                  <h3 className="text-white font-sans font-bold text-lg tracking-wide">Verified Operator</h3>
                 </div>
-                
-                {/* Data Points */}
                 <div className="p-6 space-y-6">
-                  
-                  {/* Trust Score */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-bold text-gray-600">Trust Score</div>
-                    <div className="flex items-center gap-1">
-                      <div className="h-2 w-2 rounded-full bg-green-500"></div>
-                      <span className="font-bold text-gray-900">9.8/10</span>
-                    </div>
+                  <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+                    <span className="text-gray-500 font-serif text-sm">Trust Score</span>
+                    <span className="text-green-600 font-bold text-xl flex items-center gap-1">
+                      <div className="h-2 w-2 rounded-full bg-green-500"></div> 9.8/10
+                    </span>
                   </div>
-                  <Separator />
-
-                  {/* License */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-bold text-gray-600">License</div>
+                  <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+                    <span className="text-gray-500 font-serif text-sm">License</span>
                     <div className="flex items-center gap-2">
-                      <img src="/images/text/site_logo.png" alt="Verified" className="h-4 w-auto opacity-50" />
-                      <span className="text-sm text-gray-900">Verified</span>
+                      <img src="/images/text/site_logo.png" alt="License" className="h-3 w-auto opacity-50" />
+                      <span className="text-gray-900 font-bold text-sm">Verified</span>
                     </div>
                   </div>
-                  <Separator />
-
-                  {/* Payout Speed */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-sm font-bold text-gray-600">Payout Speed</div>
-                    <span className="text-sm font-bold text-gray-900">~12 Mins</span>
+                  <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+                    <span className="text-gray-500 font-serif text-sm">Payout Speed</span>
+                    <span className="text-gray-900 font-bold text-sm">~12 Mins</span>
                   </div>
-                  <Separator />
-
-                  {/* Offer */}
+                  
                   <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 text-center space-y-2">
-                    <div className="text-xs font-bold text-gray-400 uppercase">Exclusive Offer</div>
-                    <div className="font-bold text-xl text-gray-900">50% Match Bonus</div>
-                    <div className="text-sm text-gray-500">Up to $1,000 Free Play</div>
+                    <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Exclusive Offer</div>
+                    <img src="/images/text/bonus_title.png" alt="50% Match Bonus" className="h-6 w-auto mx-auto" />
+                    <img src="/images/text/bonus_amount.png" alt="Up to $1,000 Free Play" className="h-5 w-auto mx-auto" />
                     <div className="pt-2">
-                      <code className="bg-white border border-gray-200 px-2 py-1 rounded text-xs font-mono text-red-600">BOL1000</code>
+                      <img src="/images/text/promo_code.png" alt="Code: BOL1000" className="h-4 w-auto mx-auto opacity-70" />
                     </div>
                   </div>
 
-                  {/* CTA Button */}
                   <Button 
-                    className="w-full h-12 bg-green-600 hover:bg-green-700 text-white font-bold text-lg shadow-md transition-all hover:scale-[1.02]"
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold h-12 text-lg shadow-md transition-all hover:scale-[1.02]"
                     onClick={handlePlayClick}
                   >
-                    Visit Official Site
+                    <img src="/images/text/btn_visit.png" alt="Visit Official Site" className="h-5 w-auto" />
                   </Button>
-                  
-                  <p className="text-[10px] text-center text-gray-400">
-                    Secure link verified by Fairplay Gaming Commission.
-                  </p>
                 </div>
               </Card>
 
-              {/* Related Articles Widget */}
-              <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-                <h3 className="font-sans font-bold text-gray-900 uppercase tracking-wider mb-4">Related Stories</h3>
-                <ul className="space-y-6">
-                  {[
-                    { img: "related_1.png", cat: "Strategy" },
-                    { img: "related_2.png", cat: "Safety" },
-                    { img: "related_3.png", cat: "Banking" }
-                  ].map((item, i) => (
-                    <li key={i} className="group cursor-pointer" onClick={handlePlayClick}>
-                      <div className="text-xs font-bold text-red-600 mb-1 uppercase">{item.cat}</div>
-                      <img src={`/images/text/${item.img}`} alt="Related" className="w-full group-hover:opacity-70 transition-opacity" />
-                    </li>
-                  ))}
+              {/* Trending Scams List */}
+              <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                <h4 className="font-sans font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="h-2 w-2 bg-red-500 rounded-full animate-pulse"></span>
+                  Active Alerts
+                </h4>
+                <ul className="space-y-3 text-sm">
+                  <li className="flex items-start gap-2 text-gray-600 hover:text-red-600 cursor-pointer transition-colors">
+                    <span className="text-red-500 font-bold">1.</span>
+                    Stake.com "RTP Glitch" Reports
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-600 hover:text-red-600 cursor-pointer transition-colors">
+                    <span className="text-red-500 font-bold">2.</span>
+                    Roobet Withdrawal Delays
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-600 hover:text-red-600 cursor-pointer transition-colors">
+                    <span className="text-red-500 font-bold">3.</span>
+                    Fake "Guru" Signal Groups
+                  </li>
                 </ul>
               </div>
             </div>
@@ -302,36 +288,19 @@ export default function Home() {
         </div>
       </main>
 
-      {/* --- Footer --- */}
-      <footer className="bg-gray-900 text-white py-12 mt-12 font-sans">
-        <div className="container grid md:grid-cols-4 gap-8">
-          <div className="col-span-2">
-            <img src="/images/text/site_logo.png" alt="Logo" className="h-6 w-auto invert mb-4" />
-            <p className="text-gray-400 text-sm max-w-sm">
-              The industry's leading watchdog for online gaming fairness. 
-              Exposing scams and verifying legitimate platforms since 2025.
-            </p>
+      <footer className="bg-gray-900 text-white py-12 mt-12">
+        <div className="container text-center space-y-6">
+          <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto mx-auto brightness-0 invert" />
+          <div className="flex justify-center gap-8 text-sm font-bold text-gray-400 uppercase tracking-wider">
+            <a href="#" className="hover:text-white">About</a>
+            <a href="#" className="hover:text-white">Contact</a>
+            <a href="#" className="hover:text-white">Privacy</a>
+            <a href="#" className="hover:text-white">Terms</a>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Sections</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">News</a></li>
-              <li><a href="#" className="hover:text-white">Reviews</a></li>
-              <li><a href="#" className="hover:text-white">Guides</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white">Cookie Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <Separator className="my-8 bg-gray-800" />
-        <div className="container text-center text-xs text-gray-500">
-          &copy; 2025 Fairplay Gaming Commission. All rights reserved.
+          <p className="text-gray-600 text-xs max-w-md mx-auto">
+            © 2025 Fairplay Gaming Commission. All rights reserved. 
+            Gambling involves financial risk and is addictive. Play responsibly.
+          </p>
         </div>
       </footer>
     </div>
