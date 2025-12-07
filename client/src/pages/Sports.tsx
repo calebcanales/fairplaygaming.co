@@ -5,7 +5,7 @@ import { Share2, MessageCircle, Bookmark, ShieldCheck, TrendingUp, DollarSign } 
 
 export default function Sports() {
   // Placeholder Affiliate Link - Will update when user provides it
-  const SPORTS_AFFILIATE_LINK = "https://promotions.betonline.ag/best-online-casino?btag=ubUlKh_Oaw6AaGdneVkaxWNd7ZgqdRLk&affid=114233";
+  const SPORTS_AFFILIATE_LINK = "https://www.betonline.ag/sportsbook?btag=7CsLV9Cjfh-LwWqgACq1AWNd7ZgqdRLk&affid=114233";
 
   const handlePlayClick = () => {
     window.location.href = SPORTS_AFFILIATE_LINK;
@@ -88,9 +88,15 @@ export default function Sports() {
                   </div>
                   <div>
                     <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">1. Superior Odds & Reduced Juice</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 mb-4">
                       Our analysis of 500 NFL and NBA games showed that BetOnline offers consistently better lines. While Stake often shades lines heavily against public favorites, BetOnline provides reduced juice options that save bettors thousands over a season.
                     </p>
+                    <img 
+                      src="/images/banner_nfl_welcome.png" 
+                      alt="NFL Welcome Bonus" 
+                      className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-95 transition-opacity"
+                      onClick={handlePlayClick}
+                    />
                   </div>
                 </div>
               </div>
@@ -103,9 +109,15 @@ export default function Sports() {
                   </div>
                   <div>
                     <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">2. No-Nonsense High Limits</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 mb-4">
                       Stake is notorious for limiting winning players quickly. BetOnline has a reputation for taking the sharpest action in the world without banning winners. If you want to bet big without fear of account closure, the choice is clear.
                     </p>
+                    <img 
+                      src="/images/banner_vip_rewards.png" 
+                      alt="VIP Rewards" 
+                      className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-95 transition-opacity"
+                      onClick={handlePlayClick}
+                    />
                   </div>
                 </div>
               </div>
@@ -118,9 +130,15 @@ export default function Sports() {
                   </div>
                   <div>
                     <h3 className="font-sans font-bold text-xl text-gray-900 mt-0">3. 25+ Years of Reliability</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 mb-4">
                       New crypto books come and go. BetOnline has been paying out winners for over two decades. In an industry full of rug-pulls, longevity is the ultimate proof of legitimacy.
                     </p>
+                    <img 
+                      src="/images/banner_crypto_deposit.png" 
+                      alt="Crypto Deposits" 
+                      className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-95 transition-opacity"
+                      onClick={handlePlayClick}
+                    />
                   </div>
                 </div>
               </div>
