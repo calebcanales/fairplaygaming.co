@@ -1,3 +1,4 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
@@ -5,6 +6,10 @@ import { Separator } from "@/components/ui/separator";
 import { Share2, MessageCircle, Bookmark, ThumbsUp } from "lucide-react";
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   // Affiliate Link
   const AFFILIATE_LINK = "https://promotions.betonline.ag/best-online-casino?btag=ubUlKh_Oaw6AaGdneVkaxWNd7ZgqdRLk&affid=114233";
 
@@ -19,7 +24,7 @@ export default function Home() {
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-8">
             {/* Site Logo (Image) */}
-            <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-12 w-auto" />
+            <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-12 w-auto" />
             <nav className="hidden md:flex items-center gap-6 text-sm font-sans font-bold text-gray-800 uppercase tracking-wider">
               <a href="#" className="hover:text-red-600 transition-colors">Investigations</a>
               <Link href="/sports" className="hover:text-red-600 transition-colors text-red-600">Sports Analysis</Link>
