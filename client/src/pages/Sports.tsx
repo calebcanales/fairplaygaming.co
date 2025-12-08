@@ -100,7 +100,7 @@ export default function Sports() {
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
               <div className="relative h-64 md:h-80">
                 <img 
-                  src="/images/text/sportsbook.png" 
+                  src="/images/sportsbook.png" 
                   alt="BetOnline Sportsbook" 
                   className="w-full h-full object-cover"
                 />

@@ -177,7 +177,7 @@ export default function Home() {
                 <img src="/images/text/article_subhead_3.png" alt="Final Verdict" className="h-8 w-auto mb-4" />
                 <img src="/images/text/para_sports.png" alt="Conclusion" className="w-full mb-6" />
                 <img 
-                  src="/images/text/sportsbook.png" 
+                  src="/images/sportsbook.png" 
                   alt="Sportsbook Banner" 
                   className="w-full rounded-lg cursor-pointer"
                   onClick={handlePlayClick}
