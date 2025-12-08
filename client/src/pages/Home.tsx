@@ -65,7 +65,7 @@ export default function Home() {
             {/* Featured Image - CANCELLED OWNERS */}
             <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl border-4 border-red-600">
               <img 
-                src="/images/owners_cancelled_v3.png" 
+                src="/images/owners_cancelled_user.png" 
                 alt="Stake Owners Cancelled" 
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
                 onClick={handlePlayClick}
@@ -82,7 +82,7 @@ export default function Home() {
               <div className="py-8">
                 <h3 className="font-sans font-bold text-xl uppercase tracking-wider mb-4">BetOnline Originals</h3>
                 <img 
-                  src="/images/originals_collection.png" 
+                  src="/images/originals_collection_user.png" 
                   alt="BetOnline Originals Games" 
                   className="w-full rounded-xl shadow-md border border-gray-200"
                 />
