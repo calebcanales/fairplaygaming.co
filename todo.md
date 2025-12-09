@@ -67,11 +67,12 @@
 - [x] BetOnline vs FanDuel: Odds, Payouts, and Bonuses Compared
 - [x] BetOnline vs Bovada: Why Bettors Are Switching
 - [x] BetOnline vs Stake: Crypto Bettor's Comparison
-- [ ] BetOnline vs BetMGM: A Complete FairPlayGaming Audit
-- [ ] BetOnline vs Caesars Sportsbook: Payout Speed Showdown
+- [x] BetOnline vs BetMGM: A Complete FairPlayGaming Audit
+- [x] BetOnline vs Caesars Sportsbook: Payout Speed Showdown
 
 ### Phase 2: Extended Comparison Suite
-- [ ] BetOnline vs PointsBet, ESPN Bet, MyBookie, Underdog, PrizePicks, Fliff, Chumba, Hard Rock, BetRivers
+- [x] BetOnline vs PointsBet: Variable Pricing Risk Analysis
+- [ ] BetOnline vs ESPN Bet, MyBookie, Underdog, PrizePicks, Fliff, Chumba, Hard Rock, BetRivers
 
 ### Phase 3: Industry Watchdog Reports
 - [ ] The 2025 FairPlayGaming Audit: Which Sportsbooks Actually Pay Out?
@@ -85,8 +86,9 @@
 - [ ] FanDuel Users Report Weekend Login Outages
 
 ### Phase 5: Top 10 Lists/Rankings
-- [ ] Top 10 Sportsbooks for Fastest Crypto Withdrawals
-- [ ] Best Sportsbooks for Live NFL Betting (BetOnline #1)
+- [x] Top 10 Fastest Crypto Payout Sportsbooks 2025 (BetOnline #1)
+- [x] Top 10 Best Live Betting Platforms 2025 (BetOnline #1)
+- [x] Top 10 Sportsbooks for High Rollers 2025 (BetOnline #1)
 - [ ] Top 7 Online Casinos for US Players—Commission Approved
 
 ### Phase 6: Educational Guides

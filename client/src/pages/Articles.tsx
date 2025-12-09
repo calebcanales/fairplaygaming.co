@@ -6,40 +6,94 @@ import { ArrowRight, TrendingUp, Shield, Zap } from "lucide-react";
 export default function Articles() {
   const articles = [
     {
-      title: "BetOnline vs DraftKings: Which Sportsbook Performs Best in 2025?",
-      url: "/articles/betonline-vs-draftkings",
-      description: "Comprehensive commission analysis reveals key differences in odds quality, payout speed, and account restrictions between BetOnline and DraftKings.",
-      category: "INVESTIGATION",
-      publishDate: "Dec 08, 2025",
-      icon: Shield,
-      featured: true
-    },
-    {
-      title: "BetOnline vs FanDuel: Odds, Payouts, and Bonuses Compared",
-      url: "/articles/betonline-vs-fanduel",
-      description: "Independent testing compares BetOnline and FanDuel across odds quality, withdrawal speed, and account restrictions. See which platform delivers better value.",
-      category: "INVESTIGATION",
-      publishDate: "Dec 08, 2025",
-      icon: TrendingUp,
-      featured: true
-    },
-    {
-      title: "BetOnline vs Bovada: Why Bettors Are Switching",
-      url: "/articles/betonline-vs-bovada",
-      description: "Analysis reveals significant differences in withdrawal speed, odds quality, and customer service between BetOnline and Bovada.",
-      category: "INVESTIGATION",
+      title: "Top 10 Fastest Crypto Payout Sportsbooks 2025",
+      url: "/articles/top-crypto-payout-sportsbooks",
+      description: "Independent testing ranks cryptocurrency withdrawal speeds across 24 platforms. See which sportsbooks deliver sub-15 minute payouts.",
+      category: "RANKINGS",
       publishDate: "Dec 08, 2025",
       icon: Zap,
       featured: true
     },
     {
-      title: "BetOnline vs Stake: Crypto Bettor's Comparison",
-      url: "/articles/betonline-vs-stake",
-      description: "Crypto-focused analysis compares BetOnline and Stake for cryptocurrency bettors. See which platform offers better odds, faster processing, and lower fees.",
+      title: "Top 10 Best Live Betting Platforms 2025",
+      url: "/articles/top-live-betting-platforms",
+      description: "Commission testing reveals which platforms offer fastest line updates, best odds, and most reliable execution for live betting.",
+      category: "RANKINGS",
+      publishDate: "Dec 08, 2025",
+      icon: TrendingUp,
+      featured: true
+    },
+    {
+      title: "BetOnline vs DraftKings: Which Sportsbook Performs Best?",
+      url: "/articles/betonline-vs-draftkings",
+      description: "Comprehensive commission analysis reveals key differences in odds quality, payout speed, and account restrictions.",
       category: "INVESTIGATION",
       publishDate: "Dec 08, 2025",
       icon: Shield,
       featured: true
+    },
+    {
+      title: "BetOnline vs BetMGM: Complete FairPlayGaming Audit",
+      url: "/articles/betonline-vs-betmgm",
+      description: "Six-month investigation compares BetOnline and BetMGM across payout speed, odds quality, and winner restrictions.",
+      category: "INVESTIGATION",
+      publishDate: "Dec 08, 2025",
+      icon: Shield,
+      featured: false
+    },
+    {
+      title: "BetOnline vs Caesars: The Payout Speed Showdown",
+      url: "/articles/betonline-vs-caesars",
+      description: "Testing reveals dramatic differences in withdrawal processing between BetOnline and Caesars Sportsbook.",
+      category: "INVESTIGATION",
+      publishDate: "Dec 08, 2025",
+      icon: Zap,
+      featured: false
+    },
+    {
+      title: "BetOnline vs FanDuel: Odds, Payouts, and Bonuses",
+      url: "/articles/betonline-vs-fanduel",
+      description: "Independent testing compares odds quality, withdrawal speed, and account restrictions.",
+      category: "INVESTIGATION",
+      publishDate: "Dec 08, 2025",
+      icon: TrendingUp,
+      featured: false
+    },
+    {
+      title: "BetOnline vs Bovada: Why Bettors Are Switching",
+      url: "/articles/betonline-vs-bovada",
+      description: "Analysis reveals significant differences in withdrawal speed and odds quality between offshore platforms.",
+      category: "INVESTIGATION",
+      publishDate: "Dec 08, 2025",
+      icon: Shield,
+      featured: false
+    },
+    {
+      title: "BetOnline vs Stake: Crypto Bettor's Comparison",
+      url: "/articles/betonline-vs-stake",
+      description: "Crypto-focused analysis compares withdrawal speeds, odds quality, and cryptocurrency support.",
+      category: "INVESTIGATION",
+      publishDate: "Dec 08, 2025",
+      icon: Zap,
+      featured: false
+    },
+    {
+      title: "BetOnline vs PointsBet: Which Platform Delivers Better Value?",
+      url: "/articles/betonline-vs-pointsbet",
+      description: "Investigation reveals critical differences in pricing models, risk exposure, and payout processing.",
+      category: "INVESTIGATION",
+      publishDate: "Dec 08, 2025",
+      icon: Shield,
+      featured: false
+    },
+    {
+      title: "Top 10 Sportsbooks for High Rollers 2025",
+      url: "/articles/top-high-roller-sportsbooks",
+      description: "Commission ranks platforms by betting limits, winner restrictions, and large withdrawal processing.",
+      category: "RANKINGS",
+      publishDate: "Dec 08, 2025",
+      icon: TrendingUp,
+      featured: false
     }
   ];
 

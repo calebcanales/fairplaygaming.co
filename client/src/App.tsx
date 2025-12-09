@@ -6,6 +6,12 @@ import { BetOnlineVsDraftKings } from "./pages/BetOnlineVsDraftKings";
 import { BetOnlineVsFanDuel } from "./pages/BetOnlineVsFanDuel";
 import { BetOnlineVsBovada } from "./pages/BetOnlineVsBovada";
 import { BetOnlineVsStake } from "./pages/BetOnlineVsStake";
+import { BetOnlineVsBetMGM } from "./pages/BetOnlineVsBetMGM";
+import { BetOnlineVsCaesars } from "./pages/BetOnlineVsCaesars";
+import { BetOnlineVsPointsBet } from "./pages/BetOnlineVsPointsBet";
+import { TopCryptoPayoutSportsbooks } from "./pages/TopCryptoPayoutSportsbooks";
+import { TopLiveBettingPlatforms } from "./pages/TopLiveBettingPlatforms";
+import { TopHighRollerSportsbooks } from "./pages/TopHighRollerSportsbooks";
 
 export default function App() {
   return (
@@ -18,6 +24,12 @@ export default function App() {
         <Route path="/articles/betonline-vs-fanduel" component={BetOnlineVsFanDuel} />
         <Route path="/articles/betonline-vs-bovada" component={BetOnlineVsBovada} />
         <Route path="/articles/betonline-vs-stake" component={BetOnlineVsStake} />
+        <Route path="/articles/betonline-vs-betmgm" component={BetOnlineVsBetMGM} />
+        <Route path="/articles/betonline-vs-caesars" component={BetOnlineVsCaesars} />
+        <Route path="/articles/betonline-vs-pointsbet" component={BetOnlineVsPointsBet} />
+        <Route path="/articles/top-crypto-payout-sportsbooks" component={TopCryptoPayoutSportsbooks} />
+        <Route path="/articles/top-live-betting-platforms" component={TopLiveBettingPlatforms} />
+        <Route path="/articles/top-high-roller-sportsbooks" component={TopHighRollerSportsbooks} />
         <Route>
           <div className="flex items-center justify-center min-h-screen bg-gray-50">
             <div className="text-center">
