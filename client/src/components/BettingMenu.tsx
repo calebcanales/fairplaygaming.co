@@ -13,7 +13,7 @@ export function BettingMenu() {
     { icon: Trophy, label: "RACEBOOK", color: "text-yellow-500" },
     { icon: ShoppingBag, label: "PROP SHOP", color: "text-blue-400" },
     { icon: Rocket, label: "ODDS BOOSTERS", color: "text-red-500" },
-    { icon: Layers, label: "SAME GAME PARLAYS", color: "text-orange-500" },
+    { icon: Layers, label: "LIVE PARLAYS", color: "text-orange-500" },
     { icon: Crown, label: "MEGA PARLAYS", color: "text-yellow-400" },
   ];
 

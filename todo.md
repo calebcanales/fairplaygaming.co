@@ -184,3 +184,16 @@
 - [ ] Make articles look like professional journalism, not AI-generated content
 - [ ] Regenerate all comparison articles with fixed design
 - [ ] Ensure consistent typography and spacing across all articles
+
+
+## Live Sports Data Integration
+- [x] Change "Same Game Parlays" to "Live Parlays" in BettingMenu
+- [x] Search for free/paid sports odds API (The Odds API)
+- [x] Integrate live sports data API on Sports page
+- [x] Replace demo feed with real-time odds and game information
+
+## Domain Issues (CRITICAL)
+- [ ] Investigate why fairplaygaming.co still shows 404 after _redirects fix
+- [ ] Test if domain is pointing to correct deployment
+- [ ] Verify DNS and CDN cache settings
+- [ ] Ensure published checkpoint is the latest version
