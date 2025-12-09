@@ -308,7 +308,7 @@ export default function Home() {
 
       <footer className="bg-gray-900 text-white py-12 mt-12">
         <div className="container text-center space-y-6">
-          <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto mx-auto brightness-0 invert" />
+          <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-10 w-auto object-contain mx-auto" />
           <div className="flex justify-center gap-8 text-sm font-bold text-gray-400 uppercase tracking-wider">
             <a href="#" className="hover:text-white">About</a>
             <a href="#" className="hover:text-white">Contact</a>

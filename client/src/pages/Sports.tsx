@@ -35,7 +35,7 @@ export default function Sports() {
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-8">
             <a href="/" className="flex items-center gap-3 group">
-              <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto object-contain" />
+              <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-10 w-auto object-contain" />
               <span className="text-[10px] font-sans font-bold text-gray-500 uppercase tracking-[0.2em] border-l border-gray-300 pl-3 ml-1">Official Sportsbook Review</span>
             </a>
           </div>
@@ -322,7 +322,7 @@ export default function Sports() {
       <footer className="bg-[#121212] text-white py-12 mt-12 border-t border-gray-800">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <img src="/images/text/site_logo.png" alt="Fairplay Gaming Commission" className="h-8 w-auto brightness-0 invert" />
+            <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-8 w-auto grayscale" />
           </div>
           <p className="text-gray-600 text-xs max-w-md mx-auto mb-8 font-sans">
             Fairplay Gaming Commission is an independent review site. We may earn commissions from links on this page. 

@@ -205,3 +205,10 @@
 - [x] Add filter logic to sort and display games by selected criteria
 - [x] Expand API integration to fetch MLB, NHL, college sports
 - [x] Test filtering functionality across all sports
+
+
+## Logo and Header Cleanup
+- [x] Replace PNG text logo with actual Fairplay Gaming Commission logo
+- [x] Remove random PNG text from header
+- [x] Update header design across all pages (Home, Sports, Articles, etc.)
+- [x] Ensure logo is properly sized and positioned
