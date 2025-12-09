@@ -197,3 +197,11 @@
 - [ ] Test if domain is pointing to correct deployment
 - [ ] Verify DNS and CDN cache settings
 - [ ] Ensure published checkpoint is the latest version
+
+
+## Live Odds Filtering Feature
+- [x] Design filter UI with sport/league/bet type dropdowns
+- [x] Implement filter state management in LiveOddsWidget
+- [x] Add filter logic to sort and display games by selected criteria
+- [x] Expand API integration to fetch MLB, NHL, college sports
+- [x] Test filtering functionality across all sports
