@@ -163,3 +163,24 @@
 - [x] Verify all navigation links work correctly
 - [ ] Test domain routing after fixes
 - [ ] Ensure homepage loads correctly on fairplaygaming.co
+
+
+## Sports Page Fixes
+- [x] Add missing image for "Bottom Line" section
+- [x] Add missing image for "Market-Leading Odds" section
+- [x] Add Bitcoin/Ethereum/USDT icons for payout speed section
+- [x] Add missing image for "Mobile Experience" section
+- [ ] Integrate live sports data API to replace demo feed
+- [ ] Verify all sidebar buttons (Live Betting, Racebook, etc.) work correctly
+
+
+## CRITICAL ARTICLE DESIGN FIXES (URGENT)
+- [ ] Rebuild ArticleLayout to match homepage design (proper header with logo, navigation, Subscribe/Login buttons)
+- [ ] Remove all ugly AI-looking colors (blues, greens, bright colors)
+- [ ] Implement neutral editorial color scheme (grays, blacks, reds only - like homepage)
+- [ ] Ensure all articles have proper Table of Contents
+- [ ] Audit ALL articles for PNG compliance violations
+- [ ] Convert all risky gambling text to PNG images (bonuses, odds, payouts, etc.)
+- [ ] Make articles look like professional journalism, not AI-generated content
+- [ ] Regenerate all comparison articles with fixed design
+- [ ] Ensure consistent typography and spacing across all articles
