@@ -126,3 +126,28 @@
 - [ ] Generate PNG for bonus/promotional terms in all article CTAs
 - [ ] Generate PNG for odds/RTP percentage claims
 - [ ] Generate PNG for payout speed claims in articles
+
+
+## Domain & Deployment Issues
+- [x] Fix 404 error on custom domain (added _redirects file for SPA routing)
+- [ ] Verify routing configuration for all article URLs
+- [ ] Test all article links from Articles index page
+
+## Phase 3: Investigative Exposé Articles (Next Priority)
+- [ ] "The 2025 FairPlayGaming Audit: Which Sportsbooks Actually Pay Out?"
+- [ ] "Why Mainstream Sportsbooks Slow Down Withdrawals During Big Games"
+- [ ] "Hidden Terms in Popular Sports Betting Bonuses — Exposed"
+- [ ] "Commission Report: Which Sportsbooks Manipulate Live Odds?"
+- [ ] "Why Your Sportsbook Might Be Limiting Your Winnings"
+
+## Phase 4: Additional Comparison Articles
+- [ ] BetOnline vs ESPN Bet
+- [ ] BetOnline vs MyBookie
+- [ ] BetOnline vs BetRivers
+- [ ] BetOnline vs Unibet
+
+## Phase 5: Educational Guide Articles
+- [ ] "How to Choose a Safe Sportsbook in 2025"
+- [ ] "How Withdrawal Speed Really Works in Online Betting"
+- [ ] "What Makes a Bonus Actually Valuable? Commission Guide"
+- [ ] "Understanding Betting Limits: What High Rollers Need to Know"
