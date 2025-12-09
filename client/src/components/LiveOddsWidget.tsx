@@ -30,6 +30,62 @@ interface OddsData {
 type SportFilter = 'all' | 'nfl' | 'nba' | 'mlb' | 'nhl';
 type BetTypeFilter = 'all' | 'moneyline' | 'spread' | 'total';
 
+// Helper function to get demo games
+const getDemoGames = () => [
+  {
+    sportKey: 'americanfootball_nfl',
+    league: "NFL",
+    time: "Today, 8:15 PM",
+    team1: "Kansas City Chiefs",
+    team2: "Buffalo Bills",
+    spread1: "-2.5",
+    spread2: "+2.5",
+    total: "48.5",
+    moneyline1: "-135",
+    moneyline2: "+115",
+    hot: true
+  },
+  {
+    sportKey: 'basketball_nba',
+    league: "NBA",
+    time: "Tonight, 7:30 PM",
+    team1: "Boston Celtics",
+    team2: "Miami Heat",
+    spread1: "-6.5",
+    spread2: "+6.5",
+    total: "212.5",
+    moneyline1: "-240",
+    moneyline2: "+195",
+    hot: false
+  },
+  {
+    sportKey: 'baseball_mlb',
+    league: "MLB",
+    time: "Tomorrow, 1:05 PM",
+    team1: "New York Yankees",
+    team2: "Boston Red Sox",
+    spread1: "-1.5",
+    spread2: "+1.5",
+    total: "9.5",
+    moneyline1: "-165",
+    moneyline2: "+145",
+    hot: true
+  },
+  {
+    sportKey: 'icehockey_nhl',
+    league: "NHL",
+    time: "Tonight, 8:00 PM",
+    team1: "Toronto Maple Leafs",
+    team2: "Montreal Canadiens",
+    spread1: "-1.5",
+    spread2: "+1.5",
+    total: "6.5",
+    moneyline1: "-180",
+    moneyline2: "+155",
+    hot: false
+  }
+];
+
 export function LiveOddsWidget() {
   const [allGames, setAllGames] = useState<any[]>([]);
   const [filteredGames, setFilteredGames] = useState<any[]>([]);
@@ -110,8 +166,18 @@ export function LiveOddsWidget() {
         }
       }
       
-      setAllGames(allGamesData);
-      setFilteredGames(allGamesData);
+      console.log('Fetched games from API:', allGamesData.length);
+      
+      // If no games from API, use demo data
+      if (allGamesData.length === 0) {
+        const demoGames = getDemoGames();
+        setAllGames(demoGames);
+        setFilteredGames(demoGames);
+      } else {
+        setAllGames(allGamesData);
+        setFilteredGames(allGamesData);
+      }
+      
       setLastUpdate(new Date());
       setLoading(false);
     } catch (err) {
@@ -120,34 +186,7 @@ export function LiveOddsWidget() {
       setLoading(false);
       
       // Fallback to demo data
-      const demoGames = [
-        {
-          sportKey: 'americanfootball_nfl',
-          league: "NFL",
-          time: "Today, 8:15 PM",
-          team1: "Kansas City Chiefs",
-          team2: "Buffalo Bills",
-          spread1: "-2.5",
-          spread2: "+2.5",
-          total: "48.5",
-          moneyline1: "-135",
-          moneyline2: "+115",
-          hot: true
-        },
-        {
-          sportKey: 'basketball_nba',
-          league: "NBA",
-          time: "Tonight, 7:30 PM",
-          team1: "Boston Celtics",
-          team2: "Miami Heat",
-          spread1: "-6.5",
-          spread2: "+6.5",
-          total: "212.5",
-          moneyline1: "-240",
-          moneyline2: "+195",
-          hot: false
-        }
-      ];
+      const demoGames = getDemoGames();
       setAllGames(demoGames);
       setFilteredGames(demoGames);
     }
@@ -185,7 +224,7 @@ export function LiveOddsWidget() {
         <div className="flex items-center gap-2">
           <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse"></div>
           <span className="text-xs font-bold uppercase tracking-wider text-gray-300">
-            {loading ? 'Loading...' : 'Live Odds Feed'}
+            {loading ? 'Loading...' : 'Live Feed'}
           </span>
         </div>
         <div className="flex items-center gap-2">
