@@ -26,10 +26,10 @@ export default function Home() {
             {/* Site Logo (Image) */}
             <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-12 w-auto" />
             <nav className="hidden md:flex items-center gap-6 text-sm font-sans font-bold text-gray-800 uppercase tracking-wider">
-              <a href="#" className="hover:text-red-600 transition-colors">Investigations</a>
-              <Link href="/sports" className="hover:text-red-600 transition-colors text-red-600">Sports Analysis</Link>
-              <a href="#" className="hover:text-red-600 transition-colors">Scam Alerts</a>
-              <a href="#" className="hover:text-red-600 transition-colors">Verified Sites</a>
+              <Link href="/investigations" className="hover:text-red-600 transition-colors">Investigations</Link>
+              <Link href="/sports-analysis" className="hover:text-red-600 transition-colors">Sports Analysis</Link>
+              <Link href="/scam-alerts" className="hover:text-red-600 transition-colors">Scam Alerts</Link>
+              <Link href="/verified-sites" className="hover:text-red-600 transition-colors">Verified Sites</Link>
             </nav>
           </div>
           <div className="flex items-center gap-4">

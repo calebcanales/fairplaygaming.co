@@ -12,6 +12,13 @@ import { BetOnlineVsPointsBet } from "./pages/BetOnlineVsPointsBet";
 import { TopCryptoPayoutSportsbooks } from "./pages/TopCryptoPayoutSportsbooks";
 import { TopLiveBettingPlatforms } from "./pages/TopLiveBettingPlatforms";
 import { TopHighRollerSportsbooks } from "./pages/TopHighRollerSportsbooks";
+import Investigations from "./pages/Investigations";
+import ScamAlerts from "./pages/ScamAlerts";
+import VerifiedSites from "./pages/VerifiedSites";
+import { WhySportsbooksLimitWinners } from "./pages/WhySportsbooksLimitWinners";
+import { PayoutSpeedInvestigation } from "./pages/PayoutSpeedInvestigation";
+import { BonusTermsExposed } from "./pages/BonusTermsExposed";
+import { BetOnlineVsESPNBet } from "./pages/BetOnlineVsESPNBet";
 
 export default function App() {
   return (
@@ -19,6 +26,9 @@ export default function App() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/sports-analysis" component={Sports} />
+        <Route path="/investigations" component={Investigations} />
+        <Route path="/scam-alerts" component={ScamAlerts} />
+        <Route path="/verified-sites" component={VerifiedSites} />
         <Route path="/articles" component={Articles} />
         <Route path="/articles/betonline-vs-draftkings" component={BetOnlineVsDraftKings} />
         <Route path="/articles/betonline-vs-fanduel" component={BetOnlineVsFanDuel} />
@@ -30,6 +40,10 @@ export default function App() {
         <Route path="/articles/top-crypto-payout-sportsbooks" component={TopCryptoPayoutSportsbooks} />
         <Route path="/articles/top-live-betting-platforms" component={TopLiveBettingPlatforms} />
         <Route path="/articles/top-high-roller-sportsbooks" component={TopHighRollerSportsbooks} />
+        <Route path="/articles/why-sportsbooks-limit-winners" component={WhySportsbooksLimitWinners} />
+        <Route path="/articles/payout-speed-investigation" component={PayoutSpeedInvestigation} />
+        <Route path="/articles/bonus-terms-exposed" component={BonusTermsExposed} />
+        <Route path="/articles/betonline-vs-espnbet" component={BetOnlineVsESPNBet} />
         <Route>
           <div className="flex items-center justify-center min-h-screen bg-gray-50">
             <div className="text-center">

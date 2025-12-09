@@ -151,3 +151,15 @@
 - [ ] "How Withdrawal Speed Really Works in Online Betting"
 - [ ] "What Makes a Bonus Actually Valuable? Commission Guide"
 - [ ] "Understanding Betting Limits: What High Rollers Need to Know"
+
+
+## CRITICAL NAVIGATION FIXES (URGENT)
+- [x] Fix homepage showing wrong article (Stake.com instead of original homepage)
+- [x] Fix "Investigations" navigation link (currently broken - nothing happens)
+- [x] Fix "Sports Analysis" page (showing 404, used to work)
+- [x] Fix "Scam Alerts" navigation link (currently broken)
+- [x] Fix "Verified Sites" navigation link (currently broken)
+- [x] Build out "Verified Sites" page with BetOnline-focused content
+- [x] Verify all navigation links work correctly
+- [ ] Test domain routing after fixes
+- [ ] Ensure homepage loads correctly on fairplaygaming.co
