@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { Share2, Bookmark, CheckCircle2, XCircle, Star, ChevronRight, Trophy, Flame, TrendingUp, Smartphone, CreditCard, HelpCircle } from "lucide-react";
 import { LiveOddsWidget } from "@/components/LiveOddsWidget";
 import { BettingMenu } from "@/components/BettingMenu";
+import { LiveGameBanner } from "@/components/LiveGameBanner";
 
 export default function Sports() {
   // Affiliate Link
@@ -15,20 +16,8 @@ export default function Sports() {
 
   return (
     <div className="min-h-screen bg-[#f0f2f5] font-serif text-gray-900">
-      {/* --- Top Bar (Dark) --- */}
-      <div className="bg-[#121212] text-white py-2 text-xs font-condensed tracking-wider border-b border-gray-800">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex gap-4">
-            <span className="text-green-500 font-bold flex items-center gap-1"><div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div> LIVE MARKETS OPEN</span>
-            <span className="text-gray-400">NFL WEEK 14</span>
-            <span className="text-gray-400">NBA REGULAR SEASON</span>
-          </div>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-white text-gray-400 transition-colors">ODDS FORMAT: AMERICAN</a>
-            <a href="#" className="hover:text-white text-gray-400 transition-colors">TIMEZONE: ET</a>
-          </div>
-        </div>
-      </div>
+      {/* --- Animated Live Game Banner --- */}
+      <LiveGameBanner />
 
       {/* --- Main Header --- */}
       <header className="bg-white border-b-4 border-red-600 sticky top-0 z-50 shadow-md">

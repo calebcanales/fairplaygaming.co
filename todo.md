@@ -212,3 +212,13 @@
 - [x] Remove random PNG text from header
 - [x] Update header design across all pages (Home, Sports, Articles, etc.)
 - [x] Ensure logo is properly sized and positioned
+
+
+## Button PNG Compliance & Banner Animation
+- [x] Generate PNG image for "Bet Now" button text
+- [x] Generate PNG image for "Claim Bonus" button text
+- [x] Replace "Bet Now" button text with PNG image
+- [x] Replace "Claim Bonus" button text with PNG image
+- [x] Fix missing icon in "Bet Now" button (using PNG image)
+- [x] Create animated live game feed banner with scrolling effect
+- [x] Make banner display real-time game information
