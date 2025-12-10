@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, TrendingUp, Shield, Zap } from "lucide-react";
+import { Shield } from "lucide-react";
 
 interface BonusBoxProps {
   variant: "hero" | "mid" | "final";
@@ -17,75 +17,54 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
   if (variant === "hero") {
     return (
       <Card className="sticky top-24 bg-white border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300">
-        <div className="bg-gray-50 border-b border-gray-200 p-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">
-              Verified Operator
-            </h3>
-            <div className="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">
-              VERIFIED
-            </div>
-          </div>
+        <div className="bg-[#1a1a1a] p-4 text-center">
+          <h3 className="text-white font-sans font-bold text-base tracking-wide">
+            Verified Operator
+          </h3>
         </div>
         
-        <div className="p-6 space-y-5">
-          <div className="flex items-center justify-center py-2">
-            <img 
-              src="/images/logo_dark.png" 
-              alt="BetOnline" 
-              className="h-10 w-auto"
-            />
-          </div>
-
-          <div className="space-y-3 border-t border-gray-100 pt-4">
-            <div className="flex items-center justify-between text-sm">
-              <span className="text-gray-600">Trust Score</span>
-              <span className="font-bold text-green-600 text-lg">9.8/10</span>
+        <div className="p-6 space-y-6">
+          {/* Trust Metrics */}
+          <div className="space-y-4">
+            <div className="flex items-center justify-between text-sm border-b border-gray-100 pb-4">
+              <span className="text-gray-500 font-serif">Trust Score</span>
+              <span className="text-green-600 font-bold text-xl flex items-center gap-1">
+                <div className="h-2 w-2 rounded-full bg-green-500"></div> 9.8/10
+              </span>
             </div>
-            <div className="flex items-center justify-between text-sm border-t border-gray-50 pt-3">
-              <span className="text-gray-600">License</span>
-              <span className="text-xs text-gray-500 uppercase">FAIRPLAY GAMING COMMISSION</span>
+            <div className="flex items-center justify-between text-sm border-b border-gray-100 pb-4">
+              <span className="text-gray-500 font-serif">License</span>
+              <div className="text-right">
+                <div className="text-xs text-gray-400 uppercase tracking-wide">FAIRPLAY GAMING</div>
+                <div className="text-xs text-gray-400 uppercase tracking-wide">COMMISSION</div>
+                <span className="text-gray-900 font-bold text-xs">Verified</span>
+              </div>
             </div>
-            <div className="flex items-center justify-between text-sm border-t border-gray-50 pt-3">
-              <span className="text-gray-600">Payout Speed</span>
-              <span className="font-semibold text-gray-900">~12 Mins</span>
-            </div>
-          </div>
-
-          {/* Subtle offer section */}
-          <div className="bg-gray-50 p-4 rounded border border-gray-100 space-y-3">
-            <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider text-center">Exclusive Offer</div>
-            <div className="flex flex-col items-center gap-2">
-              <img 
-                src="/images/text/bonus_50_welcome.png" 
-                alt="Welcome Offer" 
-                className="h-7 w-auto"
-              />
-              <img 
-                src="/images/text/bonus_up_to_1000.png" 
-                alt="Bonus Amount" 
-                className="h-6 w-auto"
-              />
-            </div>
-            <div className="text-center">
-              <img 
-                src="/images/text/promo_code.png" 
-                alt="Promo Code" 
-                className="h-4 w-auto mx-auto opacity-80"
-              />
+            <div className="flex items-center justify-between text-sm border-b border-gray-100 pb-4">
+              <span className="text-gray-500 font-serif">Payout Speed</span>
+              <span className="text-gray-900 font-bold">~12 Mins</span>
             </div>
           </div>
 
-          {/* Subtle CTA */}
+          {/* Offer Section - Clean & Professional */}
+          <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
+            <div className="text-xs font-bold text-gray-400 uppercase tracking-wider text-center">Exclusive Offer</div>
+            <div className="text-center space-y-2">
+              <div className="text-2xl font-bold text-gray-900">50% Match Bonus</div>
+              <div className="text-lg font-semibold text-red-600">Up to $1,000</div>
+            </div>
+            <div className="text-center pt-2">
+              <div className="text-xs text-gray-500 uppercase tracking-wide">Use Promo Code:</div>
+              <div className="text-sm font-mono font-bold text-gray-700 mt-1">BOL1000</div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
           <Button 
-            className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium h-12 shadow-sm transition-all hover:shadow-md flex items-center justify-center"
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold h-12 text-base shadow-md transition-all hover:scale-[1.02]"
             onClick={handleClick}
           >
-            <img 
-              src="/images/text/cta_play_now_verified.png" 
-              alt="Visit Site" 
-              className="h-4 w-auto"
-            />
+            Visit Official Site →
           </Button>
 
           <p className="text-xs text-gray-400 text-center leading-relaxed">
@@ -130,11 +109,7 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
             className="bg-gray-900 hover:bg-gray-800 text-white font-medium h-11 px-8 shadow-sm transition-all hover:shadow-md"
             onClick={handleClick}
           >
-            <img 
-              src="/images/text/cta_unlock_offer.png" 
-              alt="View Details" 
-              className="h-4 w-auto"
-            />
+            View Verified Operator →
           </Button>
         </div>
       </Card>
@@ -180,15 +155,11 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
 
           <div className="space-y-4 border-t border-gray-700 pt-8">
             <Button 
-              className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold h-14 shadow-lg transition-all hover:shadow-xl flex items-center justify-center gap-3"
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold h-14 text-lg shadow-lg transition-all hover:shadow-xl flex items-center justify-center gap-3"
               onClick={handleClick}
             >
               <Shield className="h-5 w-5" />
-              <img 
-                src="/images/text/cta_join_betonline.png" 
-                alt="Join BetOnline" 
-                className="h-5 w-auto"
-              />
+              Start Betting Smarter →
             </Button>
             <p className="text-gray-400 text-xs text-center">
               Exclusive offer for FairPlayGaming readers • No hidden terms

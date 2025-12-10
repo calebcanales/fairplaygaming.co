@@ -8,6 +8,14 @@
 - [x] Implement SEO-optimized FAQ component
 - [ ] Add pros/cons comparison table component
 
+## Bonus Box Redesign (User Feedback - URGENT)
+- [x] Analyze current bonus box issues (broken images, poor spacing, aggressive look)
+- [x] Design professional editorial-style bonus box matching homepage aesthetic
+- [x] Update BonusBox component with clean styling
+- [x] Replace PNG images with better quality or remove entirely
+- [x] Test across all 14 articles
+- [ ] Save checkpoint with improved bonus boxes
+
 ## Navigation & Site Structure
 - [ ] Update main navigation with article categories (Investigations, Reviews, Comparisons, Guides)
 - [x] Create article listing/index pages for each category
