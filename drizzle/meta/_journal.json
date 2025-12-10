@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1765185713343,
+      "tag": "0000_unusual_tempest",
+      "breakpoints": true
+    }
+  ]
+}
