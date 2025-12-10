@@ -37,15 +37,13 @@ export function PayoutSpeedInvestigation() {
 
   return (
     <ArticleLayout
-      metaTitle="Payout Speed Investigation: 17 Sportsbooks Tested | 2025"
-      metaDescription="FairPlayGaming tested withdrawal speeds across 17 major sportsbooks. See which platforms pay in minutes vs days, and why cryptocurrency changes everything."
-      title="Payout Speed Investigation: 17 Major Sportsbooks Tested"
-      subtitle="Commission testing reveals 30x speed difference between fastest and slowest withdrawal processing"
-      publishDate="Dec 09, 2025"
       category="INVESTIGATION"
+      subcategory="ANALYSIS"
+      title="Payout Speed Investigation: 17 Major Sportsbooks Tested"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

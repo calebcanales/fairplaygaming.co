@@ -38,15 +38,13 @@ export function BetOnlineVsPointsBet() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs PointsBet: Which Platform Delivers Better Value? | 2025"
-      metaDescription="Independent analysis compares BetOnline and PointsBet across odds quality, variable pricing risks, and withdrawal speed. See which platform wins."
-      title="BetOnline vs PointsBet: Which Platform Delivers Better Value?"
-      subtitle="Commission investigation reveals critical differences in pricing models, risk exposure, and payout processing"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs PointsBet: Which Platform Delivers Better Value?"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

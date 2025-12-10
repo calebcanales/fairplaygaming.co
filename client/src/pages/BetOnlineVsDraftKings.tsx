@@ -67,15 +67,13 @@ export function BetOnlineVsDraftKings() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs DraftKings: Which Sportsbook Performs Best in 2025? | FairPlayGaming"
-      metaDescription="Independent commission testing reveals key differences in payout speed, odds accuracy, and bonus terms between BetOnline and DraftKings. See which platform wins."
-      title="BetOnline vs DraftKings: Which Sportsbook Performs Best in 2025?"
-      subtitle="Independent commission analysis of payout speed, odds accuracy, and platform reliability"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs DraftKings: Which Sportsbook Performs Best in 2025?"
+      description="Independent commission testing reveals key differences in payout speed, odds accuracy, and bonus terms between BetOnline and DraftKings. See which platform wins."
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       {/* Introduction */}

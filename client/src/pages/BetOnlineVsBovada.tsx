@@ -67,15 +67,13 @@ export function BetOnlineVsBovada() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs Bovada: Why Bettors Are Switching | FairPlayGaming Commission"
-      metaDescription="Independent analysis reveals key differences in withdrawal speed, odds quality, and customer service between BetOnline and Bovada. See why players are making the switch."
-      title="BetOnline vs Bovada: Why Bettors Are Switching"
-      subtitle="Commission investigation uncovers significant differences in processing speed, odds value, and platform reliability"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs Bovada: Why Bettors Are Switching"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       {/* Introduction */}

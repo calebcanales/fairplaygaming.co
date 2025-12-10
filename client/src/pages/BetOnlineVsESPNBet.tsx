@@ -33,15 +33,13 @@ export function BetOnlineVsESPNBet() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs ESPN Bet: Complete Comparison | 2025"
-      metaDescription="Commission analysis compares BetOnline and ESPN Bet across payout speed, odds quality, and account management. See which platform delivers better value."
-      title="BetOnline vs ESPN Bet: Brand Name vs Performance"
-      subtitle="ESPN's sports media empire meets operational reality in sportsbook comparison"
-      publishDate="Dec 09, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs ESPN Bet: Brand Name vs Performance"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

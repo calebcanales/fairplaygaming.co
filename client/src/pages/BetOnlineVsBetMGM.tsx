@@ -37,15 +37,13 @@ export function BetOnlineVsBetMGM() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs BetMGM: Complete Audit | 2025"
-      metaDescription="Six-month investigation compares payout speed, odds quality, and winner restrictions."
-      title="BetOnline vs BetMGM: Complete FairPlayGaming Audit"
-      subtitle="Commission investigation reveals dramatic operational differences"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs BetMGM: Complete FairPlayGaming Audit"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

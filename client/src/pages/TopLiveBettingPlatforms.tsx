@@ -37,15 +37,13 @@ export function TopLiveBettingPlatforms() {
 
   return (
     <ArticleLayout
-      metaTitle="Top 10 Best Live Betting Platforms 2025 | Commission Tested"
-      metaDescription="Independent testing ranks the best live betting sportsbooks. See which platforms offer fastest line updates, best odds, and most reliable execution."
+      category="INVESTIGATION"
+      subcategory="RANKINGS"
       title="Top 10 Best Live Betting Platforms Tested in 2025"
-      subtitle="Commission analysis reveals which platforms deliver superior live betting experiences across speed, variety, and execution quality"
-      publishDate="Dec 08, 2025"
-      category="RANKINGS"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

@@ -38,15 +38,13 @@ export function TopCryptoPayoutSportsbooks() {
 
   return (
     <ArticleLayout
-      metaTitle="Top 10 Fastest Crypto Payout Sportsbooks 2025 | Commission Tested"
-      metaDescription="Independent testing ranks the fastest cryptocurrency withdrawal sportsbooks. See which platforms deliver sub-15 minute payouts and which to avoid."
+      category="INVESTIGATION"
+      subcategory="RANKINGS"
       title="Top 10 Fastest Crypto Payout Sportsbooks in 2025"
-      subtitle="Commission testing reveals dramatic differences in cryptocurrency withdrawal speeds across major platforms"
-      publishDate="Dec 08, 2025"
-      category="RANKINGS"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

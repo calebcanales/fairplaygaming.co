@@ -37,15 +37,13 @@ export function TopHighRollerSportsbooks() {
 
   return (
     <ArticleLayout
-      metaTitle="Top 10 Sportsbooks for High Rollers 2025 | Commission Ranked"
-      metaDescription="Independent analysis ranks the best sportsbooks for high-stakes players. See which platforms offer highest limits, best odds, and don't restrict winners."
+      category="INVESTIGATION"
+      subcategory="RANKINGS"
       title="Top 10 Sportsbooks for High Rollers in 2025"
-      subtitle="Commission investigation reveals which platforms accommodate serious bankrolls without restrictions or degraded pricing"
-      publishDate="Dec 08, 2025"
-      category="RANKINGS"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

@@ -37,15 +37,13 @@ export function BetOnlineVsCaesars() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs Caesars: Payout Speed Showdown | 2025"
-      metaDescription="Independent testing reveals dramatic differences in withdrawal processing between BetOnline and Caesars. See which platform delivers faster payouts."
-      title="BetOnline vs Caesars: The Payout Speed Showdown"
-      subtitle="Commission investigation exposes massive differences in withdrawal processing and odds quality"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs Caesars: The Payout Speed Showdown"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

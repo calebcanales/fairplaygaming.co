@@ -67,15 +67,13 @@ export function BetOnlineVsFanDuel() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs FanDuel: Odds, Payouts, and Bonuses Compared | FairPlayGaming"
-      metaDescription="Independent commission testing compares BetOnline and FanDuel across odds quality, withdrawal speed, and account restrictions. See which platform delivers better value."
-      title="BetOnline vs FanDuel: Odds, Payouts, and Bonuses Compared"
-      subtitle="Commission analysis reveals key differences in pricing, payout processing, and long-term account viability"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs FanDuel: Odds, Payouts, and Bonuses Compared"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       {/* Introduction */}

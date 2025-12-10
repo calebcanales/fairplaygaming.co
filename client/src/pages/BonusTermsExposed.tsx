@@ -37,15 +37,13 @@ export function BonusTermsExposed() {
 
   return (
     <ArticleLayout
-      metaTitle="Bonus Terms Exposed: Which Are Actually Fair? | 2025"
-      metaDescription="FairPlayGaming investigation reveals hidden restrictions in sportsbook bonuses. See which offers are genuine value vs marketing traps."
-      title="Hidden Terms in Popular Sports Betting Bonuses — Exposed"
-      subtitle="Commission analysis reveals why most sportsbook bonuses are designed to trap, not reward"
-      publishDate="Dec 09, 2025"
       category="INVESTIGATION"
+      subcategory="ANALYSIS"
+      title="Hidden Terms in Popular Sports Betting Bonuses — Exposed"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

@@ -47,15 +47,13 @@ export function WhySportsbooksLimitWinners() {
 
   return (
     <ArticleLayout
-      metaTitle="Why Sportsbooks Limit Winning Players: Investigation | 2025"
-      metaDescription="FairPlayGaming investigation reveals how sportsbooks identify and restrict profitable accounts. Learn which platforms accept winners and how to protect your betting freedom."
-      title="Why Your Sportsbook Might Be Limiting Your Winnings"
-      subtitle="Commission investigation exposes the systematic restriction of winning players across major US sportsbooks"
-      publishDate="Dec 09, 2025"
       category="INVESTIGATION"
+      subcategory="ANALYSIS"
+      title="Why Your Sportsbook Might Be Limiting Your Winnings"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       <section className="mb-12">

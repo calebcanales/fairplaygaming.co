@@ -67,15 +67,13 @@ export function BetOnlineVsStake() {
 
   return (
     <ArticleLayout
-      metaTitle="BetOnline vs Stake: Crypto Bettor's Comparison | FairPlayGaming Commission"
-      metaDescription="Independent analysis compares BetOnline and Stake for cryptocurrency bettors. See which platform offers better odds, faster processing, and lower fees."
-      title="BetOnline vs Stake: Crypto Bettor's Comparison"
-      subtitle="Commission analysis reveals key differences in crypto processing, odds quality, and platform features for cryptocurrency users"
-      publishDate="Dec 08, 2025"
       category="INVESTIGATION"
+      subcategory="SPORTSBOOK COMPARISON"
+      title="BetOnline vs Stake: Crypto Bettor's Comparison"
+      description=""
+      date="Dec 08, 2025"
       tableOfContents={tableOfContents}
       faqs={faqs}
-      relatedArticles={relatedArticles}
     >
       
       {/* Introduction */}
