@@ -230,3 +230,16 @@
 - [x] Fix WhySportsbooksLimitWinners.tsx ArticleLayout props
 - [x] Fix all other broken article pages (14 total)
 - [x] Verify all TypeScript errors resolved (0 errors)
+
+
+## Visual Design Improvements
+- [x] Improve article typography (font sizes, line heights, letter spacing)
+- [x] Add better spacing and breathing room in article layouts
+- [x] Enhance visual hierarchy with proper heading styles
+- [x] Improve bonus box design to look less "salesy" and more editorial
+- [x] Add subtle shadows and depth to cards and sections
+- [x] Improve table designs with better borders and spacing)
+- [ ] Polish the homepage hero section
+- [x] Add hover states and micro-interactions
+- [ ] Improve mobile responsiveness
+- [ ] Add professional imagery and graphics where needed
