@@ -259,3 +259,9 @@
 - [x] Rebuild ArticleLayout to match homepage template exactly
 - [x] Apply homepage styling to all article pages
 - [x] Test articles with new template design
+
+## Google Conversion Tracking (User Request)
+- [x] Add Google Ads conversion tracking tag (AW-17800261302) to index.html
+- [x] Rebuild static files
+- [x] Push to GitHub static-deploy branch
+- [x] Verify deployment on Vercel
