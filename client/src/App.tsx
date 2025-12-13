@@ -14,6 +14,10 @@ import { WhySportsbooksLimitWinners } from "./pages/WhySportsbooksLimitWinners";
 import { TopCryptoPayoutSportsbooks } from "./pages/TopCryptoPayoutSportsbooks";
 import { TopHighRollerSportsbooks } from "./pages/TopHighRollerSportsbooks";
 import { TopLiveBettingPlatforms } from "./pages/TopLiveBettingPlatforms";
+import Investigations from "./pages/Investigations";
+import Sports from "./pages/Sports";
+import ScamAlerts from "./pages/ScamAlerts";
+import VerifiedSites from "./pages/VerifiedSites";
 
 function App() {
   return (
@@ -39,6 +43,12 @@ function App() {
       <Route path="/articles/top-crypto-payout-sportsbooks" component={TopCryptoPayoutSportsbooks} />
       <Route path="/articles/top-high-roller-sportsbooks" component={TopHighRollerSportsbooks} />
       <Route path="/articles/top-live-betting-platforms" component={TopLiveBettingPlatforms} />
+      
+      {/* Navigation pages */}
+      <Route path="/investigations" component={Investigations} />
+      <Route path="/sports-analysis" component={Sports} />
+      <Route path="/scam-alerts" component={ScamAlerts} />
+      <Route path="/verified-sites" component={VerifiedSites} />
       
       <Route>404 - Page Not Found</Route>
     </Switch>

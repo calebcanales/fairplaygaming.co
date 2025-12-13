@@ -355,3 +355,13 @@
 - [x] Update BonusBox component for all article pages
 - [x] Test all bonus boxes across articles to ensure compliance
 - [ ] Deploy to GitHub and verify on fairplaygaming.co
+
+## Navigation Links Broken (URGENT)
+- [x] Check which pages exist for navigation links
+- [x] Fix /investigations route
+- [x] Fix /sports-analysis route  
+- [x] Fix /scam-alerts route
+- [x] Fix /verified-sites route
+- [x] Update App.tsx routing configuration
+- [x] Test all navigation links work correctly
+- [ ] Save checkpoint with fixed navigation
