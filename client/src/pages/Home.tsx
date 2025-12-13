@@ -248,33 +248,16 @@ export default function Home() {
                       <div className="h-2 w-2 rounded-full bg-green-500"></div> 9.8/10
                     </span>
                   </div>
-                  <div className="flex justify-between items-center border-b border-gray-100 pb-4">
-                    <span className="text-gray-500 font-serif text-sm">License</span>
-                    <div className="flex items-center gap-2">
-                      <img src="/images/text/site_logo.png" alt="License" className="h-3 w-auto opacity-50" />
-                      <span className="text-gray-900 font-bold text-sm">Verified</span>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-gray-100 pb-4">
-                    <span className="text-gray-500 font-serif text-sm">Payout Speed</span>
-                    <span className="text-gray-900 font-bold text-sm">~12 Mins</span>
-                  </div>
                   
                   {/* Real BetOnline Promotional Image */}
                   <div className="bg-white rounded-lg overflow-hidden">
                     <img 
                       src="/promo-no-strings.png" 
                       alt="BetOnline Welcome Offer" 
-                      className="w-full h-auto"
+                      className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={handlePlayClick}
                     />
                   </div>
-
-                  <Button 
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold h-12 text-lg shadow-md transition-all hover:scale-[1.02]"
-                    onClick={handlePlayClick}
-                  >
-                    <img src="/images/text/btn_visit.png" alt="Visit Official Site" className="h-5 w-auto" />
-                  </Button>
                 </div>
               </Card>
 
