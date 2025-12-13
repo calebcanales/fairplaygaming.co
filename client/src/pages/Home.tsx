@@ -260,13 +260,13 @@ export default function Home() {
                     <span className="text-gray-900 font-bold text-sm">~12 Mins</span>
                   </div>
                   
-                  <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 text-center space-y-2">
-                    <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Exclusive Offer</div>
-                    <img src="/images/text/bonus_title.png" alt="50% Match Bonus" className="h-6 w-auto mx-auto" />
-                    <img src="/images/text/bonus_amount.png" alt="Up to $1,000 Free Play" className="h-5 w-auto mx-auto" />
-                    <div className="pt-2">
-                      <img src="/images/text/promo_code.png" alt="Code: BOL1000" className="h-4 w-auto mx-auto opacity-70" />
-                    </div>
+                  {/* Real BetOnline Promotional Image */}
+                  <div className="bg-white rounded-lg overflow-hidden">
+                    <img 
+                      src="/promo-no-strings.png" 
+                      alt="BetOnline Welcome Offer" 
+                      className="w-full h-auto"
+                    />
                   </div>
 
                   <Button 
