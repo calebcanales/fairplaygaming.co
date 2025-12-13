@@ -365,3 +365,12 @@
 - [x] Update App.tsx routing configuration
 - [x] Test all navigation links work correctly
 - [ ] Save checkpoint with fixed navigation
+
+## Responsible Gambling Footer (Google Ads Policy Line 7)
+- [x] Create ResponsibleGamblingFooter component
+- [x] Add responsible gambling resources and helpline numbers
+- [x] Include age verification statement (18+/21+)
+- [x] Add links to gambling addiction support organizations
+- [x] Integrate footer into all pages via App.tsx
+- [x] Test footer displays correctly on all pages
+- [ ] Save checkpoint with responsible gambling footer

@@ -18,9 +18,11 @@ import Investigations from "./pages/Investigations";
 import Sports from "./pages/Sports";
 import ScamAlerts from "./pages/ScamAlerts";
 import VerifiedSites from "./pages/VerifiedSites";
+import { ResponsibleGamblingFooter } from "./components/ResponsibleGamblingFooter";
 
 function App() {
   return (
+    <>
     <Switch>
       <Route path="/" component={Home} />
       
@@ -52,6 +54,8 @@ function App() {
       
       <Route>404 - Page Not Found</Route>
     </Switch>
+    <ResponsibleGamblingFooter />
+    </>
   );
 }
 
