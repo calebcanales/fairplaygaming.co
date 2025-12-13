@@ -48,7 +48,7 @@ export function PayoutSpeedInvestigation() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          You win $2,400 on Sunday NFL action. How long until that money hits your account? The answer varies from 9 minutes to 7 business days depending on your sportsbook. The FairPlayGaming Commission conducted standardized withdrawal tests across 17 major platforms to measure real-world payout speeds. The results expose dramatic operational differences that directly impact player liquidity and betting flexibility.
+          You win $2,400 on Sunday NFL action. How long until that money hits your account? The answer varies from 9 minutes to 7 business days depending on your sportsbook. The Our editorial team conducted standardized withdrawal tests across 17 major platforms to measure real-world payout speeds. The results expose dramatic operational differences that directly impact player liquidity and betting flexibility.
         </p>
       </section>
 

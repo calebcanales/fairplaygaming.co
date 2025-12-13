@@ -23,7 +23,7 @@ export function BetOnlineVsFanDuel() {
   const faqs = [
     {
       question: "Which platform offers better odds - BetOnline or FanDuel?",
-      answer: "Based on our commission analysis of 600+ games across NFL, NBA, and MLB, BetOnline offered better pricing 58% of the time. FanDuel's odds are competitive but carry slightly higher juice, particularly on popular markets where recreational action is heavy. BetOnline's lower hold percentage results in better long-term value for players."
+      answer: "Based on our commission analysis of numerous games across NFL, NBA, and MLB, BetOnline offered better pricing 58% of the time. FanDuel's odds are competitive but carry slightly higher juice, particularly on popular markets where recreational action is heavy. BetOnline's lower hold percentage results in better long-term value for players."
     },
     {
       question: "How long do withdrawals take on each platform?",
@@ -82,7 +82,7 @@ export function BetOnlineVsFanDuel() {
           FanDuel has established itself as a dominant force in regulated US sports wagering markets through aggressive marketing, mainstream partnerships, and a user-friendly platform designed for recreational players. Meanwhile, BetOnline has served a global audience for over two decades with a focus on competitive pricing, fast payouts, and minimal restrictions on successful players.
         </p>
         <p className="text-lg leading-relaxed text-gray-700 mt-4">
-          The FairPlayGaming Commission conducted a five-month comparative analysis to determine which platform delivers superior value across the metrics that matter most to serious players. Our testing involved real deposits totaling $30,000 across both platforms, comprehensive odds tracking across major sports, and systematic withdrawal verification. The findings reveal significant differences in pricing structure, payout processing, and account management policies that directly impact player profitability over time.
+          The Our editorial team conducted a five-month comparative analysis to determine which platform delivers superior value across the metrics that matter most to serious players. Our testing involved real deposits totaling $30,000 across both platforms, comprehensive odds tracking across major sports, and systematic withdrawal verification. The findings reveal significant differences in pricing structure, payout processing, and account management policies that directly impact player profitability over time.
         </p>
       </section>
 
@@ -123,7 +123,7 @@ export function BetOnlineVsFanDuel() {
 
       {/* Methodology Section */}
       <section id="methodology" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">FairPlayGaming Testing Methodology</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Our editorial team Testing Methodology</h2>
         
         <p className="text-gray-700 leading-relaxed mb-6">
           Our comparative analysis employed rigorous testing protocols designed to simulate real-world player behavior across multiple scenarios:
@@ -137,7 +137,7 @@ export function BetOnlineVsFanDuel() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 font-bold">•</span>
-              <span><strong>Odds Analysis:</strong> Tracked closing lines on 600+ games across NFL, NBA, MLB, and college sports to measure pricing quality</span>
+              <span><strong>Odds Analysis:</strong> Tracked closing lines on numerous games across NFL, NBA, MLB, and college sports to measure pricing quality</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 font-bold">•</span>
@@ -174,10 +174,10 @@ export function BetOnlineVsFanDuel() {
         <div id="odds" className="mb-10">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Odds Quality & Pricing</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Our commission tracked closing lines across 600+ games in major markets. BetOnline offered superior pricing 58% of the time, with particularly strong advantages on NFL underdogs (average 0.5 points better) and NBA totals (average 2 cents better juice). FanDuel's odds are competitive but reflect their larger recreational user base, with lines moving earlier and often settling at less favorable prices by kickoff.
+            Our commission tracked closing lines across numerous games in major markets. BetOnline offered superior pricing 58% of the time, with particularly strong advantages on NFL underdogs (average 0.5 points better) and NBA totals (average 2 cents better juice). FanDuel's odds are competitive but reflect their larger recreational user base, with lines moving earlier and often settling at less favorable prices by kickoff.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The hold percentage comparison reveals the structural advantage: BetOnline maintains approximately 4.3% hold on standard markets, while FanDuel averages 5.6%. Over time, this 1.3% difference compounds significantly for active players. On a $100,000 annual handle, this translates to roughly $1,300 in additional expected value at BetOnline.
+            The hold percentage comparison reveals the structural advantage: BetOnline maintains approximately competitive hold on standard markets, while FanDuel averages 5.6%. Over time, this 1.3% difference compounds significantly for active players. On a $100,000 annual handle, this translates to roughly $1,300 in additional expected value at BetOnline.
           </p>
           <div className="bg-green-50 border-l-4 border-green-600 p-4">
             <p className="font-bold text-green-900">Winner: BetOnline</p>
@@ -310,7 +310,7 @@ export function BetOnlineVsFanDuel() {
           <Card className="p-6 bg-green-50 border-green-200">
             <h4 className="font-bold text-green-900 mb-3">Superior Pricing Structure</h4>
             <p className="text-gray-700">
-              The 1.3% difference in hold percentage between BetOnline and FanDuel translates to significant value over time. For a player wagering $50,000 annually, this difference represents approximately $650 in additional expected value at BetOnline. The pricing advantage is consistent across markets and compounds over time, making BetOnline objectively more profitable for players who can capitalize on better odds.
+              The 1.3% difference in hold percentage between BetOnline and FanDuel translates to significant value over time. For a player wagering significant volume annually, this difference represents approximately $650 in additional expected value at BetOnline. The pricing advantage is consistent across markets and compounds over time, making BetOnline objectively more profitable for players who can capitalize on better odds.
             </p>
           </Card>
 
@@ -379,7 +379,7 @@ export function BetOnlineVsFanDuel() {
             <div>
               <h4 className="font-bold text-red-700 mb-2">Cons:</h4>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Higher juice on most markets (5.6% hold)</li>
+                <li>• Higher juice on most markets (competitive hold)</li>
                 <li>• Slow withdrawal processing (2-4 days)</li>
                 <li>• Aggressive account limitations for winners</li>
                 <li>• Lower betting limits</li>
@@ -416,7 +416,7 @@ export function BetOnlineVsFanDuel() {
 
         <div className="mt-8 p-6 bg-yellow-50 border-l-4 border-yellow-500">
           <p className="text-sm text-gray-700">
-            <strong>Disclaimer:</strong> Players should verify local regulations before registering with any platform. This analysis is based on objective testing conducted by the FairPlayGaming Commission and does not constitute legal advice regarding sports wagering in specific jurisdictions.
+            <strong>Disclaimer:</strong> Players should verify local regulations before registering with any platform. This analysis is based on objective testing conducted by the Our editorial team and does not constitute legal advice regarding sports wagering in specific jurisdictions.
           </p>
         </div>
       </section>

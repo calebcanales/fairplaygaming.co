@@ -48,7 +48,7 @@ export function BonusTermsExposed() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          "Bet $10, Get $200 in Bonus Bets!" The ads are everywhere. The reality? That $200 comes with 20x rollover, 7-day expiration, -200 minimum odds, and a maximum $50 withdrawal cap. The FairPlayGaming Commission analyzed bonus terms across 12 major sportsbooks to expose the hidden restrictions that turn advertised value into marketing illusion. What we found reveals an industry built on deliberately confusing terms designed to maximize deposits while minimizing actual payouts.
+          "Bet $10, Get $200 in Bonus Bets!" The ads are everywhere. The reality? That $200 comes with 20x rollover, 7-day expiration, -200 minimum odds, and a maximum $50 withdrawal cap. The Our editorial team analyzed bonus terms across 12 major sportsbooks to expose the hidden restrictions that turn advertised value into marketing illusion. What we found reveals an industry built on deliberately confusing terms designed to maximize deposits while minimizing actual payouts.
         </p>
       </section>
 

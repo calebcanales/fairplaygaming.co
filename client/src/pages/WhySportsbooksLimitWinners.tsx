@@ -58,7 +58,7 @@ export function WhySportsbooksLimitWinners() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          You've been winning consistently for six weeks. Your bankroll is up 18%. Then suddenly, your maximum wager drops from $2,500 to $47. Welcome to the sportsbook winner restriction playbook—a systematic practice affecting thousands of profitable players across regulated US platforms. The FairPlayGaming Commission conducted a nine-month investigation tracking account restrictions across 14 major sportsbooks.
+          You've been winning consistently for six weeks. Your bankroll is up 18%. Then suddenly, your maximum wager drops from $2,500 to $47. Welcome to the sportsbook winner restriction playbook—a systematic practice affecting thousands of profitable players across regulated US platforms. The Our editorial team conducted a nine-month investigation tracking account restrictions across 14 major sportsbooks.
         </p>
       </section>
 

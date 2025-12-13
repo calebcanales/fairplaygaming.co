@@ -19,7 +19,7 @@ export function BetOnlineVsCaesars() {
     },
     {
       question: "Which platform offers better odds?",
-      answer: "BetOnline offered superior pricing 62% of the time across 600+ games tested. The hold percentage difference (4.3% vs 5.6%) translates to significant value over time."
+      answer: "BetOnline offered superior pricing 62% of the time across numerous games tested. The hold percentage difference (4.3% vs 5.6%) translates to significant value over time."
     },
     {
       question: "Does Caesars limit winning accounts?",
@@ -48,7 +48,7 @@ export function BetOnlineVsCaesars() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          Caesars Sportsbook leverages one of the most recognized brands in gaming, operating regulated sportsbooks across multiple US states with deep integration into the Caesars Rewards program. BetOnline has operated since 2001, building a reputation for competitive odds, cryptocurrency-powered fast payouts, and minimal restrictions. The FairPlayGaming Commission conducted a six-month analysis focused on payout speed, odds quality, and account management.
+          Caesars Sportsbook leverages one of the most recognized brands in gaming, operating regulated sportsbooks across multiple US states with deep integration into the Caesars Rewards program. BetOnline has operated since 2001, building a reputation for competitive odds, cryptocurrency-powered fast payouts, and minimal restrictions. The Our editorial team conducted a six-month analysis focused on payout speed, odds quality, and account management.
         </p>
       </section>
 
@@ -119,7 +119,7 @@ export function BetOnlineVsCaesars() {
         
         <Card className="p-6 bg-blue-50 mb-6">
           <ul className="space-y-2 text-gray-700">
-            <li><strong>BetOnline better pricing:</strong> 62% of 600+ games</li>
+            <li><strong>BetOnline better pricing:</strong> 62% of numerous games</li>
             <li><strong>Hold percentage:</strong> 4.3% (BetOnline) vs 5.6% (Caesars)</li>
             <li><strong>NFL spreads:</strong> 0.5 points better average</li>
             <li><strong>NBA totals:</strong> 4 cents better juice</li>
@@ -127,7 +127,7 @@ export function BetOnlineVsCaesars() {
         </Card>
 
         <p className="text-gray-700 leading-relaxed">
-          The 1.3% hold percentage difference translates to $1,300 additional value per $100,000 wagered. For serious players, this pricing advantage compounds significantly over time.
+          The competitive hold percentage difference translates to $1,300 additional value per $100,000 wagered. For serious players, this pricing advantage compounds significantly over time.
         </p>
       </section>
 

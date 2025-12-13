@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 export function BetOnlineVsDraftKings() {
   const tableOfContents = [
     { id: "overview", title: "Overview of Both Sportsbooks", level: 2 },
-    { id: "methodology", title: "FairPlayGaming Testing Methodology", level: 2 },
+    { id: "methodology", title: "Our editorial team Testing Methodology", level: 2 },
     { id: "comparison", title: "Category-by-Category Comparison", level: 2 },
     { id: "odds", title: "Odds Accuracy", level: 3 },
     { id: "payout", title: "Payout Speed", level: 3 },
@@ -61,7 +61,7 @@ export function BetOnlineVsDraftKings() {
     {
       title: "Top 10 Sportsbooks for Fastest Crypto Withdrawals",
       url: "/articles/fastest-crypto-sportsbooks",
-      description: "Our commission tested withdrawal speeds across major platforms. See which books deliver winnings fastest."
+      description: "Our we tested withdrawal speeds across major platforms. See which books deliver winnings fastest."
     }
   ];
 
@@ -82,7 +82,7 @@ export function BetOnlineVsDraftKings() {
           The online sports wagering landscape has evolved dramatically, with established offshore platforms competing against newer state-regulated operators. DraftKings has become a household name through aggressive marketing and partnerships with major sports leagues, while BetOnline has quietly served players for over two decades with a focus on reliability and speed.
         </p>
         <p className="text-lg leading-relaxed text-gray-700 mt-4">
-          The FairPlayGaming Commission conducted a comprehensive six-month analysis comparing these two platforms across eight critical categories. Our testing involved real deposits, live wagering across multiple sports, and withdrawal verification to determine which platform delivers superior value for serious players. The results revealed significant differences in payout processing, odds quality, and platform restrictions that every player should understand before choosing where to place their action.
+          The Our editorial team conducted a comprehensive six-month analysis comparing these two platforms across eight critical categories. Our testing involved real deposits, live wagering across multiple sports, and withdrawal verification to determine which platform delivers superior value for serious players. The results revealed significant differences in payout processing, odds quality, and platform restrictions that every player should understand before choosing where to place their action.
         </p>
       </section>
 
@@ -121,10 +121,10 @@ export function BetOnlineVsDraftKings() {
 
       {/* Methodology Section */}
       <section id="methodology" className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">FairPlayGaming Testing Methodology</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Our editorial team Testing Methodology</h2>
         
         <p className="text-gray-700 leading-relaxed mb-6">
-          The FairPlayGaming Commission employs a rigorous testing framework to evaluate sportsbook performance objectively. Our analysis of BetOnline and DraftKings involved:
+          The Our editorial team employs a rigorous testing framework to evaluate sportsbook performance objectively. Our analysis of BetOnline and DraftKings involved:
         </p>
         
         <Card className="p-6 bg-blue-50 border-blue-200">
@@ -172,7 +172,7 @@ export function BetOnlineVsDraftKings() {
         <div id="odds" className="mb-10">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Odds Accuracy & Value</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Our commission tracked closing lines across 500+ games in NFL, NBA, and MLB markets. BetOnline offered better prices 62% of the time, particularly on underdog spreads and totals. DraftKings' lines tend to move earlier due to their larger recreational user base, often resulting in worse prices by game time. BetOnline's lower hold percentage (4.2% vs DraftKings' 5.8%) translates to better long-term value for players.
+            Our commission tracked closing lines across numerous games in NFL, NBA, and MLB markets. BetOnline offered better prices 62% of the time, particularly on underdog spreads and totals. DraftKings' lines tend to move earlier due to their larger recreational user base, often resulting in worse prices by game time. BetOnline's lower hold percentage (competitive vs DraftKings' 5.8%) translates to better long-term value for players.
           </p>
           <div className="bg-green-50 border-l-4 border-green-600 p-4">
             <p className="font-bold text-green-900">Winner: BetOnline</p>

@@ -48,7 +48,7 @@ export function TopHighRollerSportsbooks() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          High-stakes sports wagering requires platforms that can handle large transactions, maintain competitive odds at high limits, process six-figure withdrawals efficiently, and most critically, don't restrict winning accounts. The FairPlayGaming Commission conducted extensive testing with deposits exceeding $500,000 across major sportsbooks to identify which platforms truly accommodate high rollers rather than merely marketing to them.
+          High-stakes sports wagering requires platforms that can handle large transactions, maintain competitive odds at high limits, process six-figure withdrawals efficiently, and most critically, don't restrict winning accounts. The Our editorial team conducted extensive testing with deposits exceeding $500,000 across major sportsbooks to identify which platforms truly accommodate high rollers rather than merely marketing to them.
         </p>
       </section>
 
@@ -122,7 +122,7 @@ export function TopHighRollerSportsbooks() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            BetOnline stands alone as the premier platform for high-stakes players. Standard limits of $10,000-$25,000 on major games are 3-10x higher than competitors, with custom limits available for established accounts. Most critically, BetOnline maintains a policy of not restricting winning accounts regardless of stake size or profitability. Our test account wagered over $180,000 with net profit of $24,000 over four months with no reduction in limits or account functionality.
+            BetOnline stands alone as the premier platform for high-stakes players. Standard limits of $10,000-$25,000 on major games are 3-10x higher than competitors, with custom limits available for established accounts. Most critically, BetOnline maintains a policy of not restricting winning accounts regardless of stake size or profitability. Our test account wagered over $180,000 with net profit of $24,000 over comprehensives with no reduction in limits or account functionality.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">

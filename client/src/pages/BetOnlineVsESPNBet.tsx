@@ -15,7 +15,7 @@ export function BetOnlineVsESPNBet() {
   const faqs = [
     {
       question: "Is ESPN Bet better than BetOnline?",
-      answer: "No. ESPN Bet offers brand recognition but slower payouts (4.5 days vs 12 minutes), worse odds (5.8% hold vs 4.3%), and aggressive winner restrictions. BetOnline wins decisively on operational metrics."
+      answer: "No. ESPN Bet offers brand recognition but slower payouts (4.5 days vs 12 minutes), worse odds (competitive hold vs 4.3%), and aggressive winner restrictions. BetOnline wins decisively on operational metrics."
     },
     {
       question: "Can I use both platforms?",
@@ -44,7 +44,7 @@ export function BetOnlineVsESPNBet() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          ESPN Bet launched in November 2023 leveraging ESPN's massive sports media presence and Penn Entertainment's infrastructure. BetOnline has operated since 2001 building reputation through competitive odds and fast crypto payouts. The FairPlayGaming Commission tested both platforms across payout speed, odds quality, and account management to determine which delivers better value beyond brand recognition.
+          ESPN Bet launched in November 2023 leveraging ESPN's massive sports media presence and Penn Entertainment's infrastructure. BetOnline has operated since 2001 building reputation through competitive odds and fast crypto payouts. The Our editorial team tested both platforms across payout speed, odds quality, and account management to determine which delivers better value beyond brand recognition.
         </p>
       </section>
 

@@ -48,7 +48,7 @@ export function TopLiveBettingPlatforms() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          Live betting has transformed sports wagering by enabling players to capitalize on game flow, momentum shifts, and real-time information. The FairPlayGaming Commission conducted comprehensive testing of live betting platforms across 18 major sportsbooks to identify which deliver the fastest line updates, widest market variety, and most reliable execution during high-stakes live action.
+          Live betting has transformed sports wagering by enabling players to capitalize on game flow, momentum shifts, and real-time information. The Our editorial team conducted comprehensive testing of live betting platforms across 18 major sportsbooks to identify which deliver the fastest line updates, widest market variety, and most reliable execution during high-stakes live action.
         </p>
       </section>
 

@@ -265,3 +265,75 @@
 - [x] Rebuild static files
 - [x] Push to GitHub static-deploy branch
 - [x] Verify deployment on Vercel
+
+## New Pages Expansion (38 Pages Total)
+### Comparison Articles (10 pages)
+- [ ] BetOnline vs MyBookie
+- [ ] BetOnline vs BetUS
+- [ ] BetOnline vs Heritage Sports
+- [ ] BetOnline vs Bookmaker.eu
+- [ ] BetOnline vs 5Dimes
+- [ ] BetOnline vs Intertops
+- [ ] BetOnline vs Nitrogen Sports
+- [ ] BetOnline vs CloudBet
+- [ ] BetOnline vs Sportsbet.io
+- [ ] BetOnline vs BetAnySports
+
+### Educational Guides (8 pages)
+- [ ] How to Bet on Sports (Beginner's Guide)
+- [ ] Understanding Betting Odds & Lines
+- [ ] Crypto Betting Complete Guide
+- [ ] Bankroll Management for Sports Bettors
+- [ ] Live Betting Strategy Guide
+- [ ] Parlay Betting Explained
+- [ ] How to Spot Betting Scams
+- [ ] Responsible Gambling Guide
+
+### Sport-Specific Pages (6 pages)
+- [ ] NFL Betting Guide 2025
+- [ ] NBA Betting Strategy
+- [ ] UFC/MMA Betting Tips
+- [ ] MLB Baseball Betting
+- [ ] College Football Betting
+- [ ] Soccer/Premier League Betting
+
+### State-Specific Pages (10 pages)
+- [ ] Best Sportsbooks in California
+- [ ] Best Sportsbooks in Texas
+- [ ] Best Sportsbooks in Florida
+- [ ] Best Sportsbooks in New York
+- [ ] Best Sportsbooks in Pennsylvania
+- [ ] Best Sportsbooks in Ohio
+- [ ] Best Sportsbooks in Illinois
+- [ ] Best Sportsbooks in Georgia
+- [ ] Best Sportsbooks in North Carolina
+- [ ] Best Sportsbooks in Michigan
+
+### Landing Pages (4 pages)
+- [ ] Main Landing Page (/landing) - future homepage
+- [ ] High Roller Sportsbooks
+- [ ] Best Live Betting Platforms
+- [ ] No-Limit Sportsbooks
+
+### Deployment
+- [ ] Update App.tsx with all new routes
+- [ ] Rebuild static files
+- [ ] Push to GitHub static-deploy branch
+- [ ] Verify deployment on Vercel
+
+## Content Rewrite (User Feedback - CRITICAL)
+- [ ] Research great.com content style
+- [ ] Update BonusBox with real affiliate link: https://record.betonlineaffiliates.ag/_xMg1uUiES83vwJ4sD1FKlGNd7ZgqdRLk/1/
+- [ ] Remove all promo code references (BOL1000)
+- [ ] Remove fake "Fairplay Gaming Commission testing" claims
+- [ ] Remove fake statistics and made-up data
+- [ ] Rewrite all 38 new pages with legitimate content matching great.com style
+- [ ] Rebuild and deploy to Vercel
+
+## Google Ads Compliance Audit (CRITICAL - Disapproved)
+- [ ] Delete all 38 new non-compliant pages (comparison, guides, state, landing)
+- [ ] Remove fake FairPlayGaming Commission testing claims from 14 original articles
+- [ ] Remove all made-up statistics and fake data
+- [ ] Rewrite articles with educational content only
+- [ ] Update App.tsx to remove deleted page routes
+- [ ] Rebuild and deploy compliant version to Vercel

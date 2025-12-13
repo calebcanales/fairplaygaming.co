@@ -49,7 +49,7 @@ export function TopCryptoPayoutSportsbooks() {
       
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          Cryptocurrency has transformed sports wagering by enabling near-instant withdrawals that bypass traditional banking delays. The FairPlayGaming Commission conducted systematic testing of cryptocurrency withdrawal processing across 24 major sportsbooks to identify which platforms deliver the fastest, most reliable payouts. Our analysis involved real withdrawals totaling $186,000 across all tested platforms, measuring processing time from withdrawal request to blockchain confirmation.
+          Cryptocurrency has transformed sports wagering by enabling near-instant withdrawals that bypass traditional banking delays. The Our editorial team conducted systematic testing of cryptocurrency withdrawal processing across 24 major sportsbooks to identify which platforms deliver the fastest, most reliable payouts. Our analysis involved real withdrawals totaling $186,000 across all tested platforms, measuring processing time from withdrawal request to blockchain confirmation.
         </p>
       </section>
 

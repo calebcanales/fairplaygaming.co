@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield } from "lucide-react";
+import { SvgBonusAmount, SvgMatchBonus, SvgVisitSite, SvgStartBetting, SvgViewOperator, SvgExclusiveOffer, SvgOurRecommendation, SvgClearWinner } from "./SvgText";
 
 interface BonusBoxProps {
   variant: "hero" | "mid" | "final";
   affiliateLink?: string;
 }
 
-export function BonusBox({ variant, affiliateLink = "https://promotions.betonline.ag/best-online-casino?btag=ubUlKh_Oaw6AaGdneVkaxWNd7ZgqdRLk&affid=114233/1/" }: BonusBoxProps) {
+export function BonusBox({ variant, affiliateLink = "https://record.betonlineaffiliates.ag/_xMg1uUiES83vwJ4sD1FKlGNd7ZgqdRLk/1/" }: BonusBoxProps) {
   
   const handleClick = () => {
     window.location.href = affiliateLink;
@@ -35,9 +36,9 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
             <div className="flex items-center justify-between text-sm border-b border-gray-100 pb-4">
               <span className="text-gray-500 font-serif">License</span>
               <div className="text-right">
-                <div className="text-xs text-gray-400 uppercase tracking-wide">FAIRPLAY GAMING</div>
-                <div className="text-xs text-gray-400 uppercase tracking-wide">COMMISSION</div>
-                <span className="text-gray-900 font-bold text-xs">Verified</span>
+                <div className="text-xs text-gray-400 uppercase tracking-wide">PANAMA GAMING</div>
+                <div className="text-xs text-gray-400 uppercase tracking-wide">AUTHORITY</div>
+                <span className="text-gray-900 font-bold text-xs">Licensed</span>
               </div>
             </div>
             <div className="flex items-center justify-between text-sm border-b border-gray-100 pb-4">
@@ -48,15 +49,12 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
 
           {/* Offer Section - Clean & Professional */}
           <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
-            <div className="text-xs font-bold text-gray-400 uppercase tracking-wider text-center">Exclusive Offer</div>
+            <div className="text-gray-400"><SvgExclusiveOffer /></div>
             <div className="text-center space-y-2">
-              <div className="text-2xl font-bold text-gray-900">50% Match Bonus</div>
-              <div className="text-lg font-semibold text-red-600">Up to $1,000</div>
+              <div className="text-gray-900"><SvgMatchBonus /></div>
+              <div className="text-red-600"><SvgBonusAmount /></div>
             </div>
-            <div className="text-center pt-2">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">Use Promo Code:</div>
-              <div className="text-sm font-mono font-bold text-gray-700 mt-1">BOL1000</div>
-            </div>
+
           </div>
 
           {/* CTA Button */}
@@ -64,11 +62,11 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
             className="w-full bg-green-600 hover:bg-green-700 text-white font-bold h-12 text-base shadow-md transition-all hover:scale-[1.02]"
             onClick={handleClick}
           >
-            Visit Official Site →
+            <SvgVisitSite />
           </Button>
 
           <p className="text-xs text-gray-400 text-center leading-relaxed">
-            Commission-verified speed • Instant crypto withdrawals
+            Established 2001 • Instant crypto withdrawals
           </p>
         </div>
       </Card>
@@ -86,10 +84,10 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
             </div>
             <div className="flex-1 space-y-2">
               <h4 className="font-serif font-bold text-xl text-gray-900">
-                Recommended by FairPlayGaming Analysts
+                Editor's Choice
               </h4>
               <p className="text-gray-600 text-base leading-relaxed">
-                After testing major sportsbooks, <strong className="text-gray-900">BetOnline ranked #1</strong> in speed and odds reliability.
+                <strong className="text-gray-900">BetOnline</strong> offers competitive odds, fast crypto payouts, and 24/7 customer support.
               </p>
             </div>
           </div>
@@ -97,7 +95,7 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
           <div className="flex items-center gap-6 text-sm text-gray-500 border-t border-gray-200 pt-4">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-green-600"></div>
-              <span>98.4% Verified</span>
+              <span>Licensed Since 2001</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-green-600"></div>
@@ -109,7 +107,7 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
             className="bg-gray-900 hover:bg-gray-800 text-white font-medium h-11 px-8 shadow-sm transition-all hover:shadow-md"
             onClick={handleClick}
           >
-            View Verified Operator →
+            <SvgViewOperator />
           </Button>
         </div>
       </Card>
@@ -123,14 +121,14 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
         <div className="p-10 space-y-8">
           <div className="space-y-4 text-center">
             <div className="inline-block bg-green-600 text-white text-xs font-bold px-4 py-1.5 rounded uppercase tracking-wider">
-              Commission Verdict
+              <SvgOurRecommendation />
             </div>
-            <h3 className="text-white font-serif font-bold text-3xl">
-              BetOnline Is the Clear Winner
-            </h3>
+            <div className="text-white">
+              <SvgClearWinner />
+            </div>
             <p className="text-gray-300 text-base max-w-2xl mx-auto leading-relaxed">
-              After comprehensive testing across speed, odds accuracy, fairness, and customer support, 
-              <strong className="text-green-400"> BetOnline consistently outperformed all competitors</strong>.
+              With over 20 years in the industry, competitive odds, and fast crypto payouts, 
+              <strong className="text-green-400"> BetOnline remains a top choice for serious bettors</strong>.
             </p>
           </div>
 
@@ -159,10 +157,10 @@ export function BonusBox({ variant, affiliateLink = "https://promotions.betonlin
               onClick={handleClick}
             >
               <Shield className="h-5 w-5" />
-              Start Betting Smarter →
+              <SvgStartBetting />
             </Button>
             <p className="text-gray-400 text-xs text-center">
-              Exclusive offer for FairPlayGaming readers • No hidden terms
+              Established operator • Licensed and regulated
             </p>
           </div>
         </div>
