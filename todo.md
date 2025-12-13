@@ -373,4 +373,5 @@
 - [x] Add links to gambling addiction support organizations
 - [x] Integrate footer into all pages via App.tsx
 - [x] Test footer displays correctly on all pages
+- [x] Condense footer spacing and remove white gap
 - [ ] Save checkpoint with responsible gambling footer
