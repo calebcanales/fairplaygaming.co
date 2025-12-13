@@ -15,7 +15,8 @@ import { TopCryptoPayoutSportsbooks } from "./pages/TopCryptoPayoutSportsbooks";
 import { TopHighRollerSportsbooks } from "./pages/TopHighRollerSportsbooks";
 import { TopLiveBettingPlatforms } from "./pages/TopLiveBettingPlatforms";
 import Investigations from "./pages/Investigations";
-import Sports from "./pages/Sports";
+import Sports from "@/pages/Sports";
+import NFLWeek15Picks from "@/pages/NFLWeek15Picks";
 import ScamAlerts from "./pages/ScamAlerts";
 import VerifiedSites from "./pages/VerifiedSites";
 import { ResponsibleGamblingFooter } from "./components/ResponsibleGamblingFooter";
@@ -49,6 +50,7 @@ function App() {
       {/* Navigation pages */}
       <Route path="/investigations" component={Investigations} />
       <Route path="/sports-analysis" component={Sports} />
+      <Route path="/sports-analysis/nfl-week-15-picks" component={NFLWeek15Picks} />
       <Route path="/scam-alerts" component={ScamAlerts} />
       <Route path="/verified-sites" component={VerifiedSites} />
       
