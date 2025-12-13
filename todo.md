@@ -352,6 +352,6 @@
 - [x] Remove "USE PROMO CODE: BOL1000" text from homepage sidebar
 - [x] Replace entire gray box section with just the real BetOnline promotional PNG images (homepage)
 - [x] Simplify homepage sidebar to only show Verified Operator, Trust Score, and promo PNG
-- [ ] Update BonusBox component for all article pages
-- [ ] Test all bonus boxes across articles to ensure compliance
+- [x] Update BonusBox component for all article pages
+- [x] Test all bonus boxes across articles to ensure compliance
 - [ ] Deploy to GitHub and verify on fairplaygaming.co
