@@ -75,8 +75,8 @@ export default function ScamAlerts() {
           <Card className="mt-12 p-8 bg-green-50 border-2 border-green-600">
             <h3 className="text-2xl font-bold mb-4">Verified Safe Alternative</h3>
             <p className="text-gray-700 mb-4">
-              Looking for a trustworthy platform? BetOnline has operated since 2001 with zero rigging scandals, 
-              provably fair games, and 12-minute crypto payouts.
+              Looking for a trustworthy platform? BetOnline has operated since 2001 with zero rigging scandals 
+              and fast crypto payouts.
             </p>
             <Link href="/verified-sites">
               <Button className="bg-green-600 hover:bg-green-700">

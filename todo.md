@@ -440,3 +440,20 @@
 - [x] Test button clicks trigger navigation correctly
 - [x] Verify no affiliate URLs visible in HTML DOM
 - [ ] Save checkpoint with button-based implementation
+
+
+## Remove Old Google Tracking Code (CRITICAL)
+- [ ] Locate and remove old Google Ads tracking code (AW-17800261302)
+- [ ] Remove old Google Analytics tracking code if present
+- [ ] Clean HTML template from all Google tags
+- [ ] Rebuild site without tracking codes
+- [ ] Deploy clean version to GitHub static-deploy branch
+- [ ] Verify betonlinesafety.com has no old tracking codes
+- [ ] Document new tracking codes (AW-17805602261) for manual addition after approval
+
+
+## URGENT: Google Ads Compliance Fix (Before Manual Review)
+- [ ] Find and remove "exclusively fair games at betonline" text from landing page
+- [ ] Verify no other searchable gambling promotional text exists
+- [ ] Deploy to GitHub for Vercel auto-deployment
+- [ ] Confirm fix is live on betonlinesafety.com

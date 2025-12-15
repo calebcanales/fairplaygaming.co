@@ -87,9 +87,7 @@ export default function Home() {
                   alt="BetOnline Originals Games" 
                   className="w-full rounded-xl shadow-md border border-gray-200"
                 />
-                <p className="text-sm text-gray-500 mt-2 italic text-center">
-                  Exclusive provably fair games available only at BetOnline.
-                </p>
+
               </div>
 
               {/* Section 1: Billionaire Owners */}
