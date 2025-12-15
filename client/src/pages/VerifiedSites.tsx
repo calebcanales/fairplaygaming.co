@@ -112,11 +112,9 @@ export default function VerifiedSites() {
             </div>
 
             <div className="flex gap-4">
-              <a href="#" className="affiliate-link flex-1">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
-                  Visit BetOnline →
-                </Button>
-              </a>
+              <Button className="affiliate-cta flex-1 w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
+                Visit BetOnline →
+              </Button>
               <Link href="/articles" className="flex-1">
                 <Button variant="outline" className="w-full text-lg py-6">
                   Read Full Analysis

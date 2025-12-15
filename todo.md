@@ -428,3 +428,15 @@
 - [x] Remove pre-lander funnel (advertise directly to fairplaygaming.co)
 - [ ] Save checkpoint after JavaScript injection implementation
 - [ ] Deploy to production and test with Google Ads
+
+
+## Button-Based Affiliate Link Refactor (Google Ads Compliance)
+- [x] Refactor affiliateLinks.ts to target buttons instead of anchor tags
+- [x] Update Home.tsx to use buttons instead of <a> tags
+- [x] Update Sports.tsx to use buttons instead of <a> tags
+- [x] Update BonusBox.tsx to use buttons instead of <a> tags
+- [x] Update VerifiedSites.tsx to use buttons instead of <a> tags
+- [x] Add CSS styling to make buttons look like clickable images
+- [x] Test button clicks trigger navigation correctly
+- [x] Verify no affiliate URLs visible in HTML DOM
+- [ ] Save checkpoint with button-based implementation

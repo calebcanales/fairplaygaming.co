@@ -1,13 +1,14 @@
 /**
- * Centralized Affiliate Link Management
+ * Affiliate Link Injection Utility
  * 
- * This utility hides WagerNetwork tracking URLs from Google's HTML crawler
- * by injecting them via JavaScript after page load.
+ * This utility injects WagerNetwork tracking URLs via JavaScript click handlers
+ * on buttons, ensuring Google's crawler cannot see affiliate links in the HTML.
  * 
- * Usage:
- * 1. Add class "affiliate-link" to any <a> tag
- * 2. Call initAffiliateLinks() on page load
- * 3. Links will automatically get the tracking URL injected
+ * Compliance Strategy:
+ * - No <a href> tags with affiliate URLs in HTML
+ * - Buttons with click event listeners only
+ * - User-initiated navigation (not auto-triggered)
+ * - Google cannot follow or discover affiliate URLs during crawl
  */
 
 // WagerNetwork tracking URL
@@ -15,17 +16,17 @@ const AFFILIATE_URL = "https://promotions.betonline.ag/best-online-casino?btag=u
 
 /**
  * Initialize affiliate link injection
- * Call this function when the page loads to inject tracking URLs
+ * Call this function when the page loads to attach click handlers to buttons
  */
 export function initAffiliateLinks() {
   // Use setTimeout to ensure React has finished rendering
   setTimeout(() => {
-    injectLinks();
+    attachClickHandlers();
   }, 100);
   
-  // Also re-inject on route changes (for SPA navigation)
+  // Also re-attach on route changes (for SPA navigation)
   const observer = new MutationObserver(() => {
-    injectLinks();
+    attachClickHandlers();
   });
   
   observer.observe(document.body, {
@@ -35,40 +36,26 @@ export function initAffiliateLinks() {
 }
 
 /**
- * Inject affiliate tracking URLs into all marked links
+ * Attach click handlers to all affiliate buttons
  */
-function injectLinks() {
-  // Find all links with the affiliate-link class
-  const affiliateLinks = document.querySelectorAll('a.affiliate-link');
+function attachClickHandlers() {
+  const affiliateButtons = document.querySelectorAll('button.affiliate-cta, .affiliate-cta');
   
-  affiliateLinks.forEach((link) => {
-    // Set the href to the tracking URL
-    (link as HTMLAnchorElement).href = AFFILIATE_URL;
+  affiliateButtons.forEach((button) => {
+    // Check if handler already attached
+    if (button.getAttribute('data-affiliate-ready') === 'true') {
+      return;
+    }
     
-    // Ensure link opens in new tab for better tracking
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
+    // Mark as ready to avoid duplicate handlers
+    button.setAttribute('data-affiliate-ready', 'true');
+    
+    // Attach click handler
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = AFFILIATE_URL;
+    });
   });
   
-  console.log(`✅ Injected ${affiliateLinks.length} affiliate links`);
-}
-
-/**
- * Get the affiliate URL directly (for programmatic use)
- */
-export function getAffiliateUrl(): string {
-  return AFFILIATE_URL;
-}
-
-/**
- * Create an affiliate link element programmatically
- */
-export function createAffiliateLink(text: string, className?: string): HTMLAnchorElement {
-  const link = document.createElement('a');
-  link.href = AFFILIATE_URL;
-  link.textContent = text;
-  link.className = className || 'affiliate-link';
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  return link;
+  console.log(`✅ Attached click handlers to ${affiliateButtons.length} affiliate buttons`);
 }

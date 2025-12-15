@@ -64,13 +64,13 @@ export default function Home() {
 
             {/* Featured Image - CANCELLED OWNERS */}
             <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl border-4 border-red-600">
-              <a href="#" className="affiliate-link block">
+              <button className="affiliate-cta w-full h-full p-0 border-0 bg-transparent cursor-pointer block">
                 <img 
                   src="/images/owners_cancelled_user.png" 
                   alt="Stake Owners Cancelled" 
-                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
+                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 />
-              </a>
+              </button>
             </div>
 
             {/* Article Body */}
@@ -174,13 +174,13 @@ export default function Home() {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <a href="#" className="affiliate-link block">
+                  <button className="affiliate-cta w-full p-0 border-0 bg-transparent cursor-pointer block">
                     <img 
                       src="/images/baccarat_var08.png" 
                       alt="Baccarat" 
-                      className="rounded-lg shadow-md w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                      className="rounded-lg shadow-md w-full object-cover hover:opacity-90 transition-opacity"
                     />
-                  </a>
+                  </button>
                   <div className="flex flex-col justify-center">
                     <img src="/images/text/para_live.png" alt="Live Dealer Description" className="w-full" />
                   </div>
@@ -191,13 +191,13 @@ export default function Home() {
               <div className="pt-4">
                 <img src="/images/text/article_subhead_3.png" alt="Final Verdict" className="h-8 w-auto mb-4" />
                 <img src="/images/text/para_sports.png" alt="Conclusion" className="w-full mb-6" />
-                <a href="#" className="affiliate-link block">
+                <button className="affiliate-cta w-full p-0 border-0 bg-transparent cursor-pointer block">
                   <img 
                     src="/images/sportsbook.png" 
                     alt="Sportsbook Banner" 
-                    className="w-full rounded-lg cursor-pointer"
+                    className="w-full rounded-lg"
                   />
-                </a>
+                </button>
               </div>
 
               <Separator className="my-12" />
@@ -249,13 +249,13 @@ export default function Home() {
                   
                   {/* Real BetOnline Promotional Image */}
                   <div className="bg-white rounded-lg overflow-hidden">
-                    <a href="#" className="affiliate-link block">
+                    <button className="affiliate-cta w-full p-0 border-0 bg-transparent cursor-pointer">
                       <img 
                         src="/promo-no-strings.png" 
                         alt="BetOnline Welcome Offer" 
-                        className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                        className="w-full h-auto hover:opacity-90 transition-opacity"
                       />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </Card>

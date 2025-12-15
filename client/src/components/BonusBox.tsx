@@ -24,13 +24,13 @@ export function BonusBox({ variant }: BonusBoxProps) {
           
           {/* Real BetOnline Promotional Image */}
           <div className="bg-white rounded-lg overflow-hidden">
-            <a href="#" className="affiliate-link block">
+            <button className="affiliate-cta w-full p-0 border-0 bg-transparent cursor-pointer">
               <img 
                 src="/promo-no-strings.png" 
                 alt="BetOnline Welcome Offer" 
-                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                className="w-full h-auto hover:opacity-90 transition-opacity"
               />
-            </a>
+            </button>
           </div>
         </div>
       </Card>
@@ -53,13 +53,13 @@ export function BonusBox({ variant }: BonusBoxProps) {
           
           {/* Real BetOnline Promotional Image */}
           <div className="bg-white rounded-lg overflow-hidden">
-            <a href="#" className="affiliate-link block">
+            <button className="affiliate-cta w-full p-0 border-0 bg-transparent cursor-pointer">
               <img 
                 src="/promo-free-spins.png" 
                 alt="BetOnline Free Spins Offer" 
-                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                className="w-full h-auto hover:opacity-90 transition-opacity"
               />
-            </a>
+            </button>
           </div>
         </div>
       </Card>
@@ -82,13 +82,13 @@ export function BonusBox({ variant }: BonusBoxProps) {
         
         {/* Real BetOnline Promotional Image */}
         <div className="bg-white rounded-lg overflow-hidden">
-            <a href="#" className="affiliate-link block">
+            <button className="affiliate-cta w-full p-0 border-0 bg-transparent cursor-pointer">
               <img 
                 src="/promo-poker-bonus.png" 
                 alt="BetOnline Poker Bonus" 
-                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                className="w-full h-auto hover:opacity-90 transition-opacity"
               />
-            </a>
+            </button>
         </div>
       </div>
     </Card>
