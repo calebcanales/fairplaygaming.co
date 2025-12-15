@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { Route, Switch } from "wouter";
 import Home from "./pages/Home";
+import { initAffiliateLinks } from "./lib/affiliateLinks";
 import { BetOnlineVsStake } from "./pages/BetOnlineVsStake";
 import { BetOnlineVsDraftKings } from "./pages/BetOnlineVsDraftKings";
 import { BetOnlineVsFanDuel } from "./pages/BetOnlineVsFanDuel";
@@ -22,6 +24,11 @@ import VerifiedSites from "./pages/VerifiedSites";
 import { ResponsibleGamblingFooter } from "./components/ResponsibleGamblingFooter";
 
 function App() {
+  // Initialize affiliate link injection after React mounts
+  useEffect(() => {
+    initAffiliateLinks();
+  }, []);
+
   return (
     <>
     <Switch>

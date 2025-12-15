@@ -10,12 +10,7 @@ export default function Home() {
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
   let { user, loading, error, isAuthenticated, logout } = useAuth();
 
-  // Affiliate Link
-  const AFFILIATE_LINK = "https://promotions.betonline.ag/best-online-casino?btag=ubUlKh_Oaw6AaGdneVkaxWNd7ZgqdRLk&affid=114233";
-
-  const handlePlayClick = () => {
-    window.location.href = AFFILIATE_LINK;
-  };
+  // Affiliate links will be injected via JavaScript (see lib/affiliateLinks.ts)
 
   return (
     <div className="min-h-screen bg-white font-serif text-gray-900">
@@ -69,12 +64,13 @@ export default function Home() {
 
             {/* Featured Image - CANCELLED OWNERS */}
             <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl border-4 border-red-600">
-              <img 
-                src="/images/owners_cancelled_user.png" 
-                alt="Stake Owners Cancelled" 
-                className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
-                onClick={handlePlayClick}
-              />
+              <a href="#" className="affiliate-link block">
+                <img 
+                  src="/images/owners_cancelled_user.png" 
+                  alt="Stake Owners Cancelled" 
+                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
+                />
+              </a>
             </div>
 
             {/* Article Body */}
@@ -178,12 +174,13 @@ export default function Home() {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <img 
-                    src="/images/baccarat_var08.png" 
-                    alt="Baccarat" 
-                    className="rounded-lg shadow-md w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                    onClick={handlePlayClick}
-                  />
+                  <a href="#" className="affiliate-link block">
+                    <img 
+                      src="/images/baccarat_var08.png" 
+                      alt="Baccarat" 
+                      className="rounded-lg shadow-md w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                    />
+                  </a>
                   <div className="flex flex-col justify-center">
                     <img src="/images/text/para_live.png" alt="Live Dealer Description" className="w-full" />
                   </div>
@@ -194,12 +191,13 @@ export default function Home() {
               <div className="pt-4">
                 <img src="/images/text/article_subhead_3.png" alt="Final Verdict" className="h-8 w-auto mb-4" />
                 <img src="/images/text/para_sports.png" alt="Conclusion" className="w-full mb-6" />
-                <img 
-                  src="/images/sportsbook.png" 
-                  alt="Sportsbook Banner" 
-                  className="w-full rounded-lg cursor-pointer"
-                  onClick={handlePlayClick}
-                />
+                <a href="#" className="affiliate-link block">
+                  <img 
+                    src="/images/sportsbook.png" 
+                    alt="Sportsbook Banner" 
+                    className="w-full rounded-lg cursor-pointer"
+                  />
+                </a>
               </div>
 
               <Separator className="my-12" />
@@ -251,12 +249,13 @@ export default function Home() {
                   
                   {/* Real BetOnline Promotional Image */}
                   <div className="bg-white rounded-lg overflow-hidden">
-                    <img 
-                      src="/promo-no-strings.png" 
-                      alt="BetOnline Welcome Offer" 
-                      className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-                      onClick={handlePlayClick}
-                    />
+                    <a href="#" className="affiliate-link block">
+                      <img 
+                        src="/promo-no-strings.png" 
+                        alt="BetOnline Welcome Offer" 
+                        className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                      />
+                    </a>
                   </div>
                 </div>
               </Card>

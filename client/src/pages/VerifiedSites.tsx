@@ -7,7 +7,7 @@ import { CheckCircle2, Shield, Zap, DollarSign } from "lucide-react";
 export default function VerifiedSites() {
   const { user, loading, error, isAuthenticated, logout } = useAuth();
 
-  const AFFILIATE_LINK = "https://promotions.betonline.ag/best-online-casino?btag=ubUlKh_Oaw6AaGdneVkaxWNd7ZgqdRLk&affid=114233/1/";
+  // Affiliate links will be injected via JavaScript (see lib/affiliateLinks.ts)
 
   return (
     <div className="min-h-screen bg-white font-serif text-gray-900">
@@ -112,7 +112,7 @@ export default function VerifiedSites() {
             </div>
 
             <div className="flex gap-4">
-              <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer" className="flex-1">
+              <a href="#" className="affiliate-link flex-1">
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
                   Visit BetOnline →
                 </Button>

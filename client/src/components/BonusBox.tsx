@@ -3,13 +3,10 @@ import { Shield } from "lucide-react";
 
 interface BonusBoxProps {
   variant: "hero" | "mid" | "final";
-  affiliateLink?: string;
 }
 
-export function BonusBox({ variant, affiliateLink = "https://record.betonlineaffiliates.ag/_xMg1uUiES83vwJ4sD1FKlGNd7ZgqdRLk/1/" }: BonusBoxProps) {
-  const handleClick = () => {
-    window.open(affiliateLink, "_blank", "noopener,noreferrer");
-  };
+export function BonusBox({ variant }: BonusBoxProps) {
+  // No affiliate link in props - will be injected via JavaScript
 
   if (variant === "hero") {
     return (
@@ -27,12 +24,13 @@ export function BonusBox({ variant, affiliateLink = "https://record.betonlineaff
           
           {/* Real BetOnline Promotional Image */}
           <div className="bg-white rounded-lg overflow-hidden">
-            <img 
-              src="/promo-no-strings.png" 
-              alt="BetOnline Welcome Offer" 
-              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={handleClick}
-            />
+            <a href="#" className="affiliate-link block">
+              <img 
+                src="/promo-no-strings.png" 
+                alt="BetOnline Welcome Offer" 
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+              />
+            </a>
           </div>
         </div>
       </Card>
@@ -55,12 +53,13 @@ export function BonusBox({ variant, affiliateLink = "https://record.betonlineaff
           
           {/* Real BetOnline Promotional Image */}
           <div className="bg-white rounded-lg overflow-hidden">
-            <img 
-              src="/promo-free-spins.png" 
-              alt="BetOnline Free Spins Offer" 
-              className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-              onClick={handleClick}
-            />
+            <a href="#" className="affiliate-link block">
+              <img 
+                src="/promo-free-spins.png" 
+                alt="BetOnline Free Spins Offer" 
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+              />
+            </a>
           </div>
         </div>
       </Card>
@@ -83,12 +82,13 @@ export function BonusBox({ variant, affiliateLink = "https://record.betonlineaff
         
         {/* Real BetOnline Promotional Image */}
         <div className="bg-white rounded-lg overflow-hidden">
-          <img 
-            src="/promo-poker-bonus.png" 
-            alt="BetOnline Poker Bonus" 
-            className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-            onClick={handleClick}
-          />
+            <a href="#" className="affiliate-link block">
+              <img 
+                src="/promo-poker-bonus.png" 
+                alt="BetOnline Poker Bonus" 
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+              />
+            </a>
         </div>
       </div>
     </Card>

@@ -7,12 +7,7 @@ import { BettingMenu } from "@/components/BettingMenu";
 import { LiveGameBanner } from "@/components/LiveGameBanner";
 
 export default function Sports() {
-  // Affiliate Link
-  const SPORTS_AFFILIATE_LINK = "https://record.betonlineaffiliates.ag/_xMg1uUiES83ABa8v4kUGqGNd7ZgqdRLk/1/";
-
-  const handlePlayClick = () => {
-    window.location.href = SPORTS_AFFILIATE_LINK;
-  };
+  // Affiliate links will be injected via JavaScript (see lib/affiliateLinks.ts)
 
   return (
     <div className="min-h-screen bg-[#f0f2f5] font-serif text-gray-900">
@@ -30,13 +25,14 @@ export default function Sports() {
           </div>
           
           <div className="hidden md:flex items-center gap-1">
-            <Button 
-              size="lg" 
-              className="bg-green-600 hover:bg-green-700 text-white font-oswald font-bold text-lg px-8 skew-x-[-10deg] shadow-lg hover:shadow-green-500/20 transition-all"
-              onClick={handlePlayClick}
-            >
-              <img src="/images/text/btn_bet_now.png" alt="Bet Now" className="h-6 w-auto skew-x-[10deg]" />
-            </Button>
+            <a href="#" className="affiliate-link">
+              <Button 
+                size="lg" 
+                className="bg-green-600 hover:bg-green-700 text-white font-oswald font-bold text-lg px-8 skew-x-[-10deg] shadow-lg hover:shadow-green-500/20 transition-all"
+              >
+                <img src="/images/text/btn_bet_now.png" alt="Bet Now" className="h-6 w-auto skew-x-[10deg]" />
+              </Button>
+            </a>
           </div>
         </div>
       </header>
@@ -53,19 +49,19 @@ export default function Sports() {
                 <Flame className="h-5 w-5 text-red-500" /> HOT LEAGUES
               </h3>
               <ul className="space-y-2 font-condensed text-sm font-bold text-gray-600">
-                <li className="flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors" onClick={handlePlayClick}>
+                <li className="affiliate-link flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors">
                   <span>NFL FOOTBALL</span>
                   <span className="bg-gray-100 text-gray-500 px-1.5 rounded text-xs">14</span>
                 </li>
-                <li className="flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors" onClick={handlePlayClick}>
+                <li className="affiliate-link flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors">
                   <span>NBA BASKETBALL</span>
                   <span className="bg-gray-100 text-gray-500 px-1.5 rounded text-xs">8</span>
                 </li>
-                <li className="flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors" onClick={handlePlayClick}>
+                <li className="affiliate-link flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors">
                   <span>UFC / MMA</span>
                   <span className="bg-gray-100 text-gray-500 px-1.5 rounded text-xs">3</span>
                 </li>
-                <li className="flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors" onClick={handlePlayClick}>
+                <li className="affiliate-link flex justify-between items-center hover:bg-gray-50 p-2 rounded cursor-pointer hover:text-red-600 transition-colors">
                   <span>PREMIER LEAGUE</span>
                   <span className="bg-gray-100 text-gray-500 px-1.5 rounded text-xs">6</span>
                 </li>
@@ -76,9 +72,11 @@ export default function Sports() {
               <div className="font-oswald font-bold text-2xl mb-2">CRYPTO BONUS</div>
               <div className="text-4xl font-black text-yellow-400 mb-4">100%</div>
               <p className="text-sm text-blue-100 mb-4 font-sans">First time deposit with Bitcoin, Ethereum or Solana.</p>
-              <Button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold border-none" onClick={handlePlayClick}>
-                <img src="/images/text/btn_claim_bonus.png" alt="Claim Bonus" className="h-5 w-auto" />
-              </Button>
+              <a href="#" className="affiliate-link block">
+                <Button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold border-none">
+                  <img src="/images/text/btn_claim_bonus.png" alt="Claim Bonus" className="h-5 w-auto" />
+                </Button>
+              </a>
             </div>
           </aside>
 
@@ -143,9 +141,9 @@ export default function Sports() {
                     While other books wait for Vegas to set the line, BetOnline <em>is</em> the market maker. They consistently post opening lines for NFL and NBA games before anyone else. This "early bird" advantage allows sharp bettors to hammer lines before the public moves them.
                   </p>
 
-                  <div className="my-8 not-prose cursor-pointer hover:opacity-95 transition-opacity" onClick={handlePlayClick}>
+                  <a href="#" className="affiliate-link block my-8 not-prose cursor-pointer hover:opacity-95 transition-opacity">
                     <img src="/images/banner_nfl_welcome.png" alt="NFL Odds" className="w-full rounded-lg shadow-md" />
-                  </div>
+                  </a>
 
                   {/* Section 2: Banking */}
                   <div className="mt-10 mb-4 flex items-center gap-2">
@@ -272,9 +270,11 @@ export default function Sports() {
                   </div>
                 </div>
 
-                <Button className="w-full font-oswald font-bold text-lg h-12 bg-red-600 hover:bg-red-700" onClick={handlePlayClick}>
-                  <img src="/images/text/btn_visit.png" alt="Visit Site" className="h-5 w-auto" />
-                </Button>
+                <a href="#" className="affiliate-link block">
+                  <Button className="w-full font-oswald font-bold text-lg h-12 bg-red-600 hover:bg-red-700">
+                    <img src="/images/text/btn_visit.png" alt="Visit Site" className="h-5 w-auto" />
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -282,24 +282,24 @@ export default function Sports() {
             <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
               <h3 className="font-oswald font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2">TRENDING NEWS</h3>
               <div className="space-y-4">
-                <div className="group cursor-pointer" onClick={handlePlayClick}>
+                <a href="#" className="affiliate-link block group cursor-pointer">
                   <div className="text-[10px] font-bold text-red-600 uppercase mb-1">NFL BETTING</div>
                   <div className="text-sm font-bold font-condensed text-gray-900 leading-tight group-hover:text-red-600 transition-colors">
-                    Sharp Money Moving Heavily on Chiefs -2.5 vs Bills
+                    BetOnline Posts Early Lines 24 Hours Before Rivals
                   </div>
-                </div>
-                <div className="group cursor-pointer" onClick={handlePlayClick}>
+                </a>
+                <a href="#" className="affiliate-link block group cursor-pointer">
                   <div className="text-[10px] font-bold text-red-600 uppercase mb-1">INDUSTRY</div>
                   <div className="text-sm font-bold font-condensed text-gray-900 leading-tight group-hover:text-red-600 transition-colors">
-                    Crypto Betting Volume Hits All-Time High in Q4 2025
+                    Offshore Books See Record Crypto Deposits
                   </div>
-                </div>
-                <div className="group cursor-pointer" onClick={handlePlayClick}>
+                </a>
+                <a href="#" className="affiliate-link block group cursor-pointer">
                   <div className="text-[10px] font-bold text-red-600 uppercase mb-1">STRATEGY</div>
                   <div className="text-sm font-bold font-condensed text-gray-900 leading-tight group-hover:text-red-600 transition-colors">
                     3 Parlay Mistakes That Are Costing You Money
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 
