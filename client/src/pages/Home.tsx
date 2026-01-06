@@ -4,6 +4,8 @@ import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Share2, MessageCircle, Bookmark, ThumbsUp } from "lucide-react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   // The userAuth hooks provides authentication state
@@ -14,28 +16,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white font-serif text-gray-900">
-      {/* --- News Site Header --- */}
-      <header className="border-b border-gray-200 bg-white">
-        <div className="container flex h-20 items-center justify-between">
-          <div className="flex items-center gap-8">
-            {/* Site Logo (Image) */}
-            <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-12 w-auto" />
-            <nav className="hidden md:flex items-center gap-6 text-sm font-sans font-bold text-gray-800 uppercase tracking-wider">
-              <Link href="/investigations" className="hover:text-red-600 transition-colors">Investigations</Link>
-              <Link href="/sports-analysis" className="hover:text-red-600 transition-colors">Sports Analysis</Link>
-              <Link href="/scam-alerts" className="hover:text-red-600 transition-colors">Scam Alerts</Link>
-              <Link href="/verified-sites" className="hover:text-red-600 transition-colors">Verified Sites</Link>
-            </nav>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm" className="hidden sm:flex font-sans">Subscribe</Button>
-            <Button size="sm" className="bg-black text-white hover:bg-gray-800 font-sans">Login</Button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
-      <main className="container py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <main className="container px-4 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
           {/* --- Main Article Column (Left) --- */}
           <div className="lg:col-span-8 space-y-8">
@@ -55,9 +39,9 @@ export default function Home() {
               <div className="flex items-center justify-between border-y border-gray-100 py-4">
                 <img src="/images/text/article_meta.png" alt="Author Info" className="h-5 w-auto" />
                 <div className="flex gap-4 text-gray-400">
-                  <Share2 className="h-5 w-5 cursor-pointer hover:text-gray-600" />
-                  <Bookmark className="h-5 w-5 cursor-pointer hover:text-gray-600" />
-                  <MessageCircle className="h-5 w-5 cursor-pointer hover:text-gray-600" />
+                  <Share2 className="h-5 w-5 cursor-pointer hover:text-gray-600 transition-colors" />
+                  <Bookmark className="h-5 w-5 cursor-pointer hover:text-gray-600 transition-colors" />
+                  <MessageCircle className="h-5 w-5 cursor-pointer hover:text-gray-600 transition-colors" />
                 </div>
               </div>
             </div>
@@ -87,15 +71,11 @@ export default function Home() {
                   alt="BetOnline Originals Games" 
                   className="w-full rounded-xl shadow-md border border-gray-200"
                 />
-
               </div>
 
               {/* Section 1: Billionaire Owners */}
               <div className="pt-4">
                 <img src="/images/text/article_subhead_owners.png" alt="Billionaire Scam" className="h-10 w-auto mb-4" />
-                
-                
-
                 <img src="/images/text/para_owners.png" alt="Owners Analysis" className="w-full mb-6" />
                 <div className="bg-red-50 border-l-4 border-red-600 p-4 italic text-gray-700 font-serif">
                   "They're buying $50 million mansions while you lose your rent money on rigged plinko balls."
@@ -115,17 +95,17 @@ export default function Home() {
                 <img src="/images/text/para_edge.png" alt="RTP Manipulation" className="w-full mb-6" />
                 
                 {/* RTP Meter Widget */}
-                <div className="my-8 p-8 bg-white rounded-xl border border-gray-200 shadow-sm">
-                  <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="my-8 p-6 md:p-8 bg-white rounded-xl border border-gray-200 shadow-sm">
+                  <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                     <div className="shrink-0">
-                      <img src="/images/rtp_meter.png" alt="High Win Rate" className="w-64 h-auto" />
+                      <img src="/images/rtp_meter.png" alt="High Win Rate" className="w-48 md:w-64 h-auto" />
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-4 text-center md:text-left">
                       <h4 className="font-sans font-bold text-lg text-gray-900">Verified Fair Play</h4>
                       <p className="text-gray-600 text-sm leading-relaxed">
                         Unlike unregulated crypto casinos that can manipulate RTP (Return to Player) on the fly, BetOnline operates under strict oversight. Our independent tests confirmed a consistent <strong>98.4% RTP</strong> across their slot catalog.
                       </p>
-                      <div className="flex items-center gap-2 text-xs font-bold text-green-600 uppercase tracking-wider">
+                      <div className="flex items-center justify-center md:justify-start gap-2 text-xs font-bold text-green-600 uppercase tracking-wider">
                         <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
                         Live Audit Active
                       </div>
@@ -143,8 +123,8 @@ export default function Home() {
                   <div className="bg-gray-900 p-4 text-white font-bold text-center uppercase tracking-wider text-sm">
                     Fair Game Comparison
                   </div>
-                  <div className="bg-white p-6">
-                    <div className="grid grid-cols-3 gap-4 text-center text-sm font-bold border-b border-gray-100 pb-4 mb-4">
+                  <div className="bg-white p-4 md:p-6">
+                    <div className="grid grid-cols-3 gap-2 md:gap-4 text-center text-xs md:text-sm font-bold border-b border-gray-100 pb-4 mb-4">
                       <div className="text-gray-400 text-left">Game Type</div>
                       <div className="text-red-500">Stake.com</div>
                       <div className="text-green-600">BetOnline</div>
@@ -157,11 +137,11 @@ export default function Home() {
                       { game: "Slots", stake: "94% RTP (Hidden)", bol: "98% RTP (Verified)" },
                       { game: "Poker", stake: "N/A", bol: "Global Tournaments" }
                     ].map((row, i) => (
-                      <div key={i} className="grid grid-cols-3 gap-4 text-sm py-3 border-b border-gray-50 last:border-0 items-center">
+                      <div key={i} className="grid grid-cols-3 gap-2 md:gap-4 text-xs md:text-sm py-3 border-b border-gray-50 last:border-0 items-center">
                         <div className="font-bold text-gray-800 text-left">{row.game}</div>
                         <div className="text-red-500 font-medium">{row.stake}</div>
                         <div className="text-green-700 font-bold flex items-center justify-center gap-1">
-                          <ThumbsUp className="h-3 w-3" /> {row.bol}
+                          <ThumbsUp className="h-3 w-3 hidden sm:block" /> {row.bol}
                         </div>
                       </div>
                     ))}
@@ -193,7 +173,7 @@ export default function Home() {
                   <img 
                     src="/images/sportsbook.png" 
                     alt="Sportsbook Banner" 
-                    className="w-full rounded-lg"
+                    className="w-full rounded-lg hover:opacity-95 transition-opacity"
                   />
                 </button>
               </div>
@@ -278,6 +258,11 @@ export default function Home() {
                     Fake "Guru" Signal Groups
                   </li>
                 </ul>
+                <Link href="/scam-alerts">
+                  <Button variant="outline" className="w-full mt-4 text-sm">
+                    View All Alerts →
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -286,21 +271,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="bg-gray-900 text-white py-12 mt-12">
-        <div className="container text-center space-y-6">
-          <img src="/images/logo_dark.png" alt="Fairplay Gaming Commission" className="h-10 w-auto object-contain mx-auto" />
-          <div className="flex justify-center gap-8 text-sm font-bold text-gray-400 uppercase tracking-wider">
-            <a href="#" className="hover:text-white">About</a>
-            <a href="#" className="hover:text-white">Contact</a>
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
-          </div>
-          <p className="text-gray-600 text-xs max-w-md mx-auto">
-            © 2025 Fairplay Gaming Commission. All rights reserved. 
-            Gambling involves financial risk and is addictive. Play responsibly.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
